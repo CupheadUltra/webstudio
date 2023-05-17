@@ -1,0 +1,153 @@
+
+
+li {
+    list-style: none;
+}
+
+.logo {
+    color: #2196F3;
+    font-family: 'Raleway';
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.logo2 {
+    color: #000;
+}
+
+.nav-list-menu a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-list-menu a:active {
+    color: #2196F3;
+}
+
+.nav-list-menu a:hover{
+    color: #2196F3;
+}
+
+.nav-list-info a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #757575;
+    font-size: 14px;
+
+}
+
+.nav-list-info a:active{
+    color: #2196F3;
+}
+
+.nav-list-info a:hover{
+    color: #2196F3;
+}
+
+            /* main */
+
+.cap-tittle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    color: #fff;
+    background: #212121;
+    text-transform: uppercase;
+}
+
+.cap-button {
+    color: #fff;
+    border: 2px solid #2196F3;
+    padding: 15px 39px;
+    border-radius: 3px;
+    background: #2196F3 ;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.why-us h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121;
+}
+
+
+.why-us h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #212121;
+    font-size: 14px;
+}
+
+.why-us p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #757575;
+    font-size: 14px;
+}
+
+.what-we-do-tittle {
+    font-family: 'Roboto', sans-serif;
+    Font-size: 36px;
+    color: #212121;
+}
+
+.our-command-tittle {
+    font-family: 'Roboto', sans-serif;
+    Font-size: 36px;
+    color: #212121;
+}
+
+.what-we-do-list {
+    display: flex;
+    justify-content: center;
+}
+
+.our-command-tittle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.our-command-discription {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+}
+
+        /* footer */
+
+footer {
+    padding: 0;
+    background-color: #2F303A;
+    height: 252px;
+    
+}
+
+
+
+.footer-address {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.footer-list a {
+    color: rgba(255, 255, 255, 60%);
+    text-decoration: none;
+   
+}
+
+.footer-list {
+    margin: 0;
+    padding: 0;
+}
