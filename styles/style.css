@@ -1,5 +1,14 @@
 
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 li {
     list-style: none;
 }
@@ -16,12 +25,18 @@ li {
     color: #000;
 }
 
+.logo3 {
+    color: #fff;
+}
+
 .nav-list-menu a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
-    color: #000;
-    text-decoration: none;
     font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
 }
 
 .nav-list-menu a:active {
@@ -52,56 +67,78 @@ li {
             /* main */
 
 .cap-tittle {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    color: #fff;
-    background: #212121;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #212121;
+    
 }
 
 .cap-button {
-    color: #fff;
-    border: 2px solid #2196F3;
-    padding: 15px 39px;
-    border-radius: 3px;
-    background: #2196F3 ;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+    width: 216px;
+    height: 50px;
+    border: #2196F3;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
-}
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
 
-.why-us h2 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #212121;
 }
 
 
 .why-us h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
-    color: #212121;
     font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
 }
 
 .why-us p{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 400;
-    color: #757575;
     font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
 
 .what-we-do-tittle {
-    font-family: 'Roboto', sans-serif;
-    Font-size: 36px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
     color: #212121;
 }
 
-.our-command-tittle {
-    font-family: 'Roboto', sans-serif;
-    Font-size: 36px;
+.our-command-tittle-h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
     color: #212121;
+    
 }
 
 .what-we-do-list {
@@ -109,17 +146,49 @@ li {
     justify-content: center;
 }
 
+.our-command {
+    background-color: #F5F4FA;
+}
+
+.our-command-article {
+    background-color: #fff;
+    width: 270px;
+    height: 428px;
+}
+
 .our-command-tittle {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 36px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.our-command-img {
+    width: 270px;
+    height: 260px;
 }
 
 .our-command-discription {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
     color: #757575;
+}
+
+.icon {
+    display: flex;
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
+    margin-inline:14px;
 }
 
         /* footer */
@@ -134,17 +203,23 @@ footer {
 
 
 .footer-address {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: #fff;
-    font-size: 14px;
+    font-family: 'Roboto';
     font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
 .footer-list a {
-    color: rgba(255, 255, 255, 60%);
-    text-decoration: none;
-   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-list {

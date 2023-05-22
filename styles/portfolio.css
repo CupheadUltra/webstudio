@@ -1,5 +1,9 @@
 
 
+a {
+    text-decoration: none;
+}
+
 li {
     list-style: none;
 }
@@ -14,6 +18,10 @@ li {
 
 .logo2 {
     color: #000;
+}
+
+.logo3 {
+    color: #fff;
 }
 
 .nav-list-menu a {
@@ -49,7 +57,8 @@ li {
     color: #2196F3;
 }
 
-                    /* main */
+        /* main */
+
 .filters-button {
     font-family: 'Roboto';
     font-style: normal;
@@ -59,38 +68,42 @@ li {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    background: #F5F4FA;
-    border: #F5F4FA;
+    background-color: #F5F4FA;
+    border: #F5F4FA ;
+    width: 130px;
+    height: 38px;
+    border-radius: 4px;
 }
 
-.filters-button:hover,:active{
+.filters-button:hover{
+    background-color: #2196F3;
+    border: #2196F3 ;
+    color: #fff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.portfolio-tittle {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    background: #2196F3;
-    border: #2196F3;
-
-}
-
-.portfolio-article h2 {
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
     color: #212121;
 }
 
-.portfolio-article p {
-    font-family: 'Roboto', sans-serif;
+.portfolio-discription {
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
     color: #757575;
 }
 
-/* footer */
+            /* footer */
 
 footer {
     padding: 0;
@@ -102,17 +115,23 @@ footer {
 
 
 .footer-address {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: #fff;
-    font-size: 14px;
+    font-family: 'Roboto';
     font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
 .footer-list a {
-    color: rgba(255, 255, 255, 60%);
-    text-decoration: none;
-    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-list {
