@@ -1,18 +1,4 @@
-
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
+/* header */
 .logo {
     color: #2196F3;
     font-family: 'Raleway';
@@ -64,22 +50,10 @@ li {
     color: #2196F3;
 }
 
-            /* main */
+            
 
-.cap-tittle {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-color: #212121;
-    
-}
 
+     /* cap */
 .cap-button {
     width: 216px;
     height: 50px;
@@ -96,9 +70,22 @@ li {
     color: #FFFFFF;
 
 }
+.cap-tittle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #212121;
+    
+}
 
-
-.why-us h3 {
+/* fearures */
+.features h3 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -109,7 +96,7 @@ li {
     color: #212121;
 }
 
-.why-us p{
+.features p{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -118,7 +105,7 @@ li {
     letter-spacing: 0.03em;
     color: #757575;
 }
-
+/* what we do */
 .what-we-do-tittle {
     font-family: 'Roboto';
     font-style: normal;
@@ -129,8 +116,13 @@ li {
     letter-spacing: 0.03em;
     color: #212121;
 }
+.what-we-do-list {
+    display: flex;
+    justify-content: center;
+}
 
-.our-command-tittle-h3 {
+/* team */
+.team-tittle-h3 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -141,22 +133,19 @@ li {
     
 }
 
-.what-we-do-list {
-    display: flex;
-    justify-content: center;
-}
 
-.our-command {
+
+.team {
     background-color: #F5F4FA;
 }
 
-.our-command-article {
+.team-article {
     background-color: #fff;
     width: 270px;
     height: 428px;
 }
 
-.our-command-tittle {
+.team-tittle {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -166,12 +155,12 @@ li {
     color: #212121;
 }
 
-.our-command-img {
+.team-img {
     width: 270px;
     height: 260px;
 }
 
-.our-command-discription {
+.team-discription {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -196,8 +185,6 @@ li {
 footer {
     padding: 0;
     background-color: #2F303A;
-    height: 252px;
-    
 }
 
 
