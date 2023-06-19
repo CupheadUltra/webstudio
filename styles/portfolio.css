@@ -1,5 +1,12 @@
-
+body {
+  font-family: "Roboto";
+}
 /* header */
+.header-container {
+  width: 1600px;
+  margin: auto;
+  padding: 25px 215px 25px 215px;
+}
 .logo {
   color: #2196f3;
   font-family: "Raleway";
@@ -14,6 +21,14 @@
 
 .logo3 {
   color: #fff;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list-menu {
+  display: flex;
+  margin-left: 95px;
 }
 
 .nav-list-menu a {
@@ -46,6 +61,16 @@
 
 .nav-list-info a:hover {
   color: #2196f3;
+}
+
+/* main */
+.main-container {
+  width: 1600px;
+  margin: auto;
+}
+
+main {
+  margin: 94px 0px 94px 0px;
 }
 
 /* filters */
@@ -96,7 +121,10 @@
 }
 
 /* footer */
-
+.footer-container {
+  width: 1600px;
+  margin: auto;
+}
 footer {
   padding: 0;
   background-color: #2f303a;

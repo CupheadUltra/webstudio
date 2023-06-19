@@ -212,10 +212,10 @@ nav {
     height: 252px;
 }
 
-.footer {
-  padding: 0;
-  background-color: #2f303a;
-}
+footer {
+    padding: 0;
+    background-color: #2f303a;
+  }
 
 .footer-address {
   font-family: "Roboto";
