@@ -4,18 +4,21 @@ body {
 
 /* header */
 
-.header-container {
-    width: 1600px;
-    margin: auto;
-    padding: 25px 215px 25px 215px;
+.container {
+  width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: solid red;
 }
 
 .logo {
   color: #2196f3;
   font-family: "Raleway";
-  text-decoration: none;
   font-size: 26px;
-  font-weight: 900;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo2 {
@@ -26,12 +29,12 @@ body {
   color: #fff;
 }
 nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .nav-list-menu {
-    display: flex;
-    margin-left: 95px;
+  display: flex;
+  margin-left: 95px;
 }
 .nav-list-menu a {
   font-family: "Roboto";
@@ -43,11 +46,11 @@ nav {
   color: #212121;
 }
 .nav-link:nth-child(2) {
-    margin-left: 55px;
+  margin-left: 55px;
 }
 
 .nav-link:nth-child(3) {
-    margin-left: 55px;
+  margin-left: 55px;
 }
 
 .nav-list-menu a:active {
@@ -57,13 +60,19 @@ nav {
 .nav-list-menu a:hover {
   color: #2196f3;
 }
-
+.nav-list-menu {
+  display: flex;
+  margin-left: 95px;
+}
 .nav-list-info a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #757575;
   font-size: 14px;
+}
+.info-link {
+  margin-left: 45px;
 }
 
 .nav-list-info a:active {
@@ -76,10 +85,7 @@ nav {
 
 /* main */
 
-.main-container {
-    width: 1600px;
-    margin: auto;
-}
+
 
 /* cap */
 .cap-button {
@@ -89,8 +95,6 @@ nav {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -98,15 +102,13 @@ nav {
   color: #ffffff;
 }
 .cap-tittle {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #212121;
 }
 
@@ -123,8 +125,7 @@ nav {
 }
 
 .features p {
-  font-family: "Roboto";
-  font-style: normal;
+ 
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -137,7 +138,7 @@ nav {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -149,31 +150,34 @@ nav {
 
 /* team */
 .team-tittle-h3 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
+  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
 .team {
+  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
 
 .team-article {
   background-color: #fff;
   width: 270px;
-  height: 428px;
 }
 
 .team-tittle {
-  font-family: "Roboto";
-  font-style: normal;
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
-  line-height: 42px;
+  line-height: 2.62;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -184,11 +188,10 @@ nav {
 }
 
 .team-discription {
-  font-family: "Roboto";
-  font-style: normal;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -204,35 +207,27 @@ nav {
 }
 
 /* footer */
-.footer-container {
-    width: 1600px;
-    margin: auto;
-    padding: 0;
-    background-color: #2F303A;
-    height: 252px;
-}
+
 
 footer {
-    padding: 0;
-    background-color: #2f303a;
-  }
+  padding-bottom: 60px;
+  padding-top: 60px;
+  padding: 0;
+  background-color: #2f303a;
+}
 
 .footer-address {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 
 .footer-list a {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
