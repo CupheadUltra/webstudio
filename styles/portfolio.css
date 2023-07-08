@@ -1,18 +1,24 @@
 body {
   font-family: "Roboto";
 }
+
 /* header */
-.header-container {
-  width: 1600px;
+
+.container {
+  width: 1200px; 
   margin: auto;
-  padding: 25px 215px 25px 215px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: solid red;
 }
+
 .logo {
-  color: #2196f3;
   font-family: "Raleway";
-  text-decoration: none;
+  font-weight: 700;
   font-size: 26px;
-  font-weight: 900;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
 }
 
 .logo2 {
@@ -22,21 +28,31 @@ body {
 .logo3 {
   color: #fff;
 }
+
 nav {
   display: flex;
   align-items: center;
 }
+
 .nav-list-menu {
   display: flex;
   margin-left: 95px;
 }
 
 .nav-list-menu a {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  color: #000;
-  text-decoration: none;
   font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.nav-link:nth-child(2) {
+  margin-left: 55px;
+}
+
+.nav-link:nth-child(3) {
+  margin-left: 55px;
 }
 
 .nav-list-menu a:active {
@@ -47,6 +63,11 @@ nav {
   color: #2196f3;
 }
 
+.nav-list-info {
+  display: flex;
+  margin-left: 95px;
+}
+
 .nav-list-info a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -55,22 +76,16 @@ nav {
   font-size: 14px;
 }
 
+.info-link {
+  margin-left: 45px;
+}
+
 .nav-list-info a:active {
   color: #2196f3;
 }
 
 .nav-list-info a:hover {
   color: #2196f3;
-}
-
-/* main */
-.main-container {
-  width: 1600px;
-  margin: auto;
-}
-
-main {
-  margin: 94px 0px 94px 0px;
 }
 
 /* filters */
@@ -121,10 +136,7 @@ main {
 }
 
 /* footer */
-.footer-container {
-  width: 1600px;
-  margin: auto;
-}
+
 footer {
   padding: 0;
   background-color: #2f303a;
