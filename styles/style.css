@@ -3,12 +3,18 @@ body {
 }
 
 /* header  */
+.header {
+  height: auto;
+  border-bottom: 1px solid #ece;
+  padding: 24px 0 25px;
+}
 
 .container {
-    width: 1200px;
-    margin: auto;
-    padding: 25px 0px 25px 0px;
-    outline: solid #ff1111;
+  width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .logo {
@@ -64,20 +70,26 @@ nav {
 
 .nav-list-info {
   display: flex;
-  margin-left: 315px;
+  margin-left: 344px;
+  gap: 50px;
+  align-items: center;
 }
 
 .nav-list-info a {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 
-
 .info-link {
-  margin-left: 45px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #757575;
 }
 
 .nav-list-info a:active {
@@ -91,36 +103,59 @@ nav {
 /* cap */
 
 .cap {
-  padding: 200px 0px 200px 0px;
+  background-color: #2f303a;
+  letter-spacing: 0.06em;
 }
-
+.cap .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 200px 252px;
+}
 .cap-tittle {
   font-weight: 900;
+  color: white;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #212121;
+  box-sizing: border-box;
 }
 
 .cap-button {
   width: 216px;
   height: 50px;
-  border: #2196f3;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  background-color: #2196f3;
+  border-style: none;
+  color: white;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: #ffffff;
+  margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+/* features */
 
 .features {
   padding: 94px 0px 47px 0px;
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.features .container ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .features h3 {
@@ -138,6 +173,9 @@ nav {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  text-transform: none;
+  width: 270px;
+  margin-top: 10px;
 }
 
 /* what-we-do */
@@ -149,10 +187,20 @@ nav {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
 }
 
+.what-we-do .container ul {
+  display: flex;
+  justify-content: space-between;
+}
 .what-we-do {
-  padding: 47px 0px 94px 0px;
+  padding: 118px 0px 94px 0px;
+}
+
+.what-we-do-img {
+  width: 370px;
+  height: 294px;
 }
 
 .what-we-do-list {
@@ -162,68 +210,71 @@ nav {
 
 /* team */
 
-.team-list {
-  display: flex;
-  justify-content: center;
-}
-
-.team-tittle-h3 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
 .team {
-  padding: 94px 0px 94px 0px;
-  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-
-.team-article {
-  background-color: #fff;
-  width: 270px;
-  height: 368px;
+.team .container ul {
+  display: flex;
+  justify-content: space-between;
 }
-
-.team-tittle {
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 2.62;
-  letter-spacing: 0.03em;
-  color: #212121;
+.team-list li {
+  padding-bottom: 30px;
 }
-
 .team-img {
   width: 270px;
   height: 260px;
 }
-
-.team-discription {
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   text-align: center;
+  color: black;
+  margin-bottom: 50px;
+}
+.team-names {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+
+  margin-top: 30px;
+}
+.team-discription {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 19px;
+  text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-top: 10px;
 }
 
 /* footer */
 
-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
 
 .footer-address {
-  font-weight: 400;
+  color: #fff;
   font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  margin-top: 20px;
+}
+
+.footer .container ul {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-list a {
