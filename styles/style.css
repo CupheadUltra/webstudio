@@ -1,0 +1,100 @@
+body {
+  font-family: "Roboto";
+}
+/* header */
+.logo1-header {
+  color: #2196f3;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.logo2-header {
+  color: #000;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.nav-list-item {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.header-gmail {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.header-tel {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.header-item:nth-child(2) {
+  margin-left: 55px;
+}
+
+.header-item:nth-child(3) {
+  margin-left: 55px;
+}
+
+.nav-list-info a:active {
+  color: #2196f3;
+}
+
+.nav-list-info a:hover {
+  color: #2196f3;
+}
+.header-gmail:active {
+  color: #2196f3;
+}
+
+.header-gmail:hover {
+  color: #2196f3;
+}
+
+.header-tel:active {
+  color: #2196f3;
+}
+
+.header-tel:hover {
+  color: #2196f3;
+}
+/* cap */
+.cap {
+  background-color: #2f303a;
+}
+
+.cap-title {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+}
+.cap-button {
+    width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+.cap-text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+}
