@@ -1,0 +1,158 @@
+body {
+  font-family: "Roboto";
+}
+/* header */
+.logo1-header {
+  color: #2196f3;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.logo2-header {
+  color: #000;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.nav-list-item a {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.header-gmail {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.header-tel {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.header-item:nth-child(2) {
+  margin-left: 55px;
+}
+
+.header-item:nth-child(3) {
+  margin-left: 55px;
+}
+
+.nav-list-info a:active {
+  color: #2196f3;
+}
+
+.nav-list-info a:hover {
+  color: #2196f3;
+}
+.header-gmail:active {
+  color: #2196f3;
+}
+
+.header-gmail:hover {
+  color: #2196f3;
+}
+
+.header-tel:active {
+  color: #2196f3;
+}
+
+.header-tel:hover {
+  color: #2196f3;
+}
+/* filters */
+.filters-button {
+  border-radius: 4px;
+  background: #f5f4fa;
+  border: none;
+}
+.fil-text {
+  color: #212121;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.62;
+  letter-spacing: 0.48px;
+}
+/* portfolio */
+.port-item {
+  border: 1px solid #eee;
+  background: #fff;
+}
+.port-name {
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
+}
+.port-work {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.48px;
+}
+/* footer */
+.footer {
+    background: #2f303a;
+  }
+  .logo1-footer {
+    color: #2196f3;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+  }
+  .logo2-footer {
+    color: #fff;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+  }
+  .footer-address {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+  }
+  .footer-gmail {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+  }
+  .footer-tel {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+  }
+  .footer-gmail:active {
+    color: #2196f3;
+  }
+  .footer-gmail:hover {
+    color: #2196f3;
+  }
+  .footer-tel:active {
+    color: #2196f3;
+  }
+  .footer-tel:hover {
+    color: #2196f3;
+  }
+  

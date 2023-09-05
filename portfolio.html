@@ -4,29 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/portfolio.css" />
+    <link rel="icon" type="images/x-icon" href="./favicon/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <nav>
-        <a target="_blank" href="./index.html">Web<span>Studio</span></a>
-        <ul>
-          <li>
-            <a href="./index.html">Студія</a>
+      <nav class="header-nav">
+        <a class="logo1-header" target="_blank" href="./index.html"
+          >Web<span class="logo2-header">Studio</span></a
+        >
+        <ul class="nav-list-info">
+          <li class="nav-list-item">
+            <a href="./index.html" class="header-item">Студія</a>
           </li>
-          <li>
-            <a href="./portfolio.html">Портфоліо</a>
+          <li class="nav-list-item">
+            <a href="./portfolio.html" class="header-item">Портфоліо</a>
           </li>
-          <li>
-            <a href="#">Контакти</a>
+          <li class="nav-list-item">
+            <a href="#" class="header-item">Контакти</a>
           </li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a href="mailtinfo@devstudio.com">info@devstudio.com</a>
+      <ul class="nav-list-contact">
+        <li class="contact-item">
+          <a href="mailtinfo@devstudio.com" class="header-gmail"
+            >info@devstudio.com</a
+          >
         </li>
-        <li class="info-item">
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
+        <li class="contact-item">
+          <a href="tel:+380961111111" class="header-tel">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
@@ -34,85 +44,122 @@
       <!-- filters -->
       <hr />
       <section class="filters">
-        <ul>
-          <li>
-            <button>Усі</button>
+        <ul class="filters-list">
+          <li class="filters-item">
+            <button type="button" class="filters-button">
+              <h2 class="fil-text">Усі</h2>
+            </button>
           </li>
-          <li>
-            <button>Веб-сайти</button>
+          <li class="filters-item">
+            <button type="button" class="filters-button">
+              <h2 class="fil-text">Веб-сайти</h2>
+            </button>
           </li>
-          <li>
-            <button>Додатки</button>
+          <li class="filters-item">
+            <button type="button" class="filters-button">
+              <h2 class="fil-text">Додатки</h2>
+            </button>
           </li>
-          <li>
-            <button>Дизайн</button>
+          <li class="filters-item">
+            <button type="button" class="filters-button">
+              <h2 class="fil-text">Дизайн</h2>
+            </button>
           </li>
-          <li>
-            <button>Маркетинг</button>
+          <li class="filters-item">
+            <button type="button" class="filters-button">
+              <h2 class="fil-text">Маркетинг</h2>
+            </button>
           </li>
         </ul>
       </section>
       <!-- portfolio -->
-      <section>
-        <ul>
-          <li>
-            <img src="./img/img-portfolio/port1.jpg" alt="catalog" />
-            <h3>Технокряк</h3>
-            <p>Веб-сайт</p>
+      <section class="portfolio">
+        <ul class="port-list">
+          <li class="port-item">
+            <img
+              src="./img/img-portfolio/port1.jpg"
+              alt="catalog"
+              class="port-img"
+            />
+            <h3 class="port-name">Технокряк</h3>
+            <p class="port-work">Веб-сайт</p>
           </li>
-          <li>
-            <img src="./img/img-portfolio/port2.jpg" alt="catalog" />
-            <h3>Постер New Orlean vs Golden Star</h3>
-            <p>Дизайн</p>
+          <li class="port-item">
+            <img
+              src="./img/img-portfolio/port2.jpg"
+              alt="catalog"
+              class="port-img"
+            />
+            <h3 class="port-name">Постер New Orlean vs Golden Star</h3>
+            <p class="port-work">Дизайн</p>
           </li>
-          <li>
-            <img src="./img/img-portfolio/port3.png" alt="catalog" />
-            <h3>Ресторан Seafood</h3>
-            <p>Додаток</p>
+          <li class="port-item">
+            <img
+              src="./img/img-portfolio/port3.png"
+              alt="catalog"
+              class="port-img"
+            />
+            <h3 class="port-name">Ресторан Seafood</h3>
+            <p class="port-work">Додаток</p>
           </li>
-          <li>
-            <img src="./img/img-portfolio/port4.png" alt="catalog" />
-            <h3>Проєкт Prime</h3>
-            <p>Маркетинг</p>
+          <li class="port-item">
+            <img
+              src="./img/img-portfolio/port4.png"
+              alt="catalog"
+              class="port-img"
+            />
+            <h3 class="port-name">Проєкт Prime</h3>
+            <p class="port-work">Маркетинг</p>
           </li>
-          <li>
+          <li class="port-item">
             <img src="./img/img-portfolio/port5.png" alt="catalog" />
-            <h3>Проєкт Boxes</h3>
-            <p>Додаток</p>
+            <h3 class="port-name">Проєкт Boxes</h3>
+            <p class="port-work">Додаток</p>
           </li>
-          <li>
-            <img src="./img/img-portfolio/port6.png" alt="catalog" />
-            <h3>Inspiration has no Borders</h3>
-            <p>Веб-сайт</p>
+          <li class="port-item">
+            <img
+              src="./img/img-portfolio/port6.png"
+              alt="catalog"
+              class="port-img"
+            />
+            <h3 class="port-name">Inspiration has no Borders</h3>
+            <p class="port-work">Веб-сайт</p>
           </li>
-          <li>
-            <img src="./img/img-portfolio/port7.jpg" alt="catalog" />
-            <h3>Видання Limited Edition</h3>
-            <p>Дизайн</p>
+          <li class="port-item">
+            <img
+              src="./img/img-portfolio/port7.jpg"
+              alt="catalog"
+              class="port-img"
+            />
+            <h3 class="port-name">Видання Limited Edition</h3>
+            <p class="port-work">Дизайн</p>
           </li>
-
-          <li>
-            <img src="./img/img-portfolio/port8.jpg" alt="catalog" />
-            <h3>Проєкт LAB</h3>
-            <p>Маркетинг</p>
+          <li class="port-item">
+            <img src="./img/img-portfolio/port8.jpg" alt="catalog" class="port-img"/>
+            <h3 class="port-name">Проєкт LAB</h3>
+            <p class="port-work">Маркетинг</p>
           </li>
-          <li>
-            <img src="./img/img-portfolio/port9.jpg" alt="catalog" />
-            <h3>Growing Business</h3>
-            <p>Додаток</p>
+          <li class="port-item">
+            <img src="./img/img-portfolio/port9.jpg" alt="catalog" class="port-img"/>
+            <h3 class="port-name">Growing Business</h3>
+            <p class="port-work">Додаток</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a target="_blank" href="./index.html">Web<span>Studio</span></a>
-      <address>м. Київ, пр-т Лесі Українки, 26</address>
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+    <footer class="footer">
+      <a class="logo1-footer" target="_blank" href="./index.html"
+        >Web<span class="logo2-footer">Studio</span></a
+      >
+      <address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a href="mailto:info@devstudio.com" class="footer-gmail"
+            >info@devstudio.com</a
+          >
         </li>
         <li>
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
+          <a href="tel:+380961111111" class="footer-tel">+38 096 111 11 11</a>
         </li>
       </ul>
     </footer>
