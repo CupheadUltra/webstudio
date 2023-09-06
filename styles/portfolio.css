@@ -3,87 +3,97 @@ body {
 }
 /* header */
 .logo1-header {
-  color: #2196f3;
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
-}
-.logo2-header {
-  color: #000;
-  font-family: Raleway;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
-}
-.nav-list-item a {
-  color: #212121;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-}
-.header-gmail {
-  color: #757575;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-}
-.header-tel {
-  color: #757575;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-}
-.header-item:nth-child(2) {
-  margin-left: 55px;
-}
-
-.header-item:nth-child(3) {
-  margin-left: 55px;
-}
-
-.nav-list-info a:active {
-  color: #2196f3;
-}
-
-.nav-list-info a:hover {
-  color: #2196f3;
-}
-.header-gmail:active {
-  color: #2196f3;
-}
-
-.header-gmail:hover {
-  color: #2196f3;
-}
-
-.header-tel:active {
-  color: #2196f3;
-}
-
-.header-tel:hover {
-  color: #2196f3;
-}
+    color: #2196f3;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+  }
+  .logo2-header {
+    color: #000;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+  }
+  .nav-list-item a {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+  .header-gmail {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+  .header-tel {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+  .nav-list-item:nth-child(1) a {
+    color: #2196f3;
+  }
+  
+  .header-item:active {
+    color: #2196f3;
+    transition: 0.7s;
+    border-radius: 4px;
+  }
+  
+  .header-item:hover {
+    color: #2196f3;
+    transition: 0.7s;
+    border-radius: 4px;
+  }
+  .header-gmail:active {
+    color: #2196f3;
+    transition: 0.7s;
+    border-radius: 4px;
+  }
+  
+  .header-gmail:hover {
+    color: #2196f3;
+    transition: 0.7s;
+    border-radius: 4px;
+  }
+  
+  .header-tel:active {
+    color: #2196f3;
+    transition: 0.7s;
+    border-radius: 4px;
+  }
+  
+  .header-tel:hover {
+    color: #2196f3;
+    transition: 0.7s;
+    border-radius: 4px;
+  }
 /* filters */
 .filters-button {
   border-radius: 4px;
   background: #f5f4fa;
   border: none;
+  color: #000;
 }
-.fil-text {
-  color: #212121;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.62;
-  letter-spacing: 0.48px;
+.filters-button:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+  transition: 0.5s;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
+
 /* portfolio */
 .port-item {
   border: 1px solid #eee;
@@ -105,54 +115,71 @@ body {
 }
 /* footer */
 .footer {
-    background: #2f303a;
-  }
-  .logo1-footer {
+  background: #2f303a;
+}
+.logo1-footer {
+  color: #2196f3;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.logo2-footer {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.footer-address {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+.footer-gmail {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+.footer-gmail:active {
+  color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
+}
+.footer-gmail:hover {
+  color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
+}
+.footer-tel:active {
+  color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
+}
+.footer-tel:hover {
+  color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
+}
+.footer-address:active{
     color: #2196f3;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
-  }
-  .logo2-footer {
-    color: #fff;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
-  }
-  .footer-address {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-  }
-  .footer-gmail {
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-  }
-  .footer-tel {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-  }
-  .footer-gmail:active {
+    transition: 0.7s;
+    border-radius: 4px;
+}
+.footer-address:hover {
     color: #2196f3;
-  }
-  .footer-gmail:hover {
-    color: #2196f3;
-  }
-  .footer-tel:active {
-    color: #2196f3;
-  }
-  .footer-tel:hover {
-    color: #2196f3;
-  }
-  
+    transition: 0.7s;
+    border-radius: 4px;
+}

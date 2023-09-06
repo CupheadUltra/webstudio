@@ -40,35 +40,43 @@ body {
   line-height: normal;
   letter-spacing: 0.28px;
 }
-.header-item:nth-child(2) {
-  margin-left: 55px;
-}
-
-.header-item:nth-child(3) {
-  margin-left: 55px;
-}
-
-.nav-list-info a:active {
+.nav-list-item:nth-child(1) a {
   color: #2196f3;
 }
 
-.nav-list-info a:hover {
+.header-item:active {
   color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
+}
+
+.header-item:hover {
+  color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
 }
 .header-gmail:active {
   color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
 }
 
 .header-gmail:hover {
   color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
 }
 
 .header-tel:active {
   color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
 }
 
 .header-tel:hover {
   color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
 }
 /* cap */
 
@@ -201,13 +209,31 @@ body {
 }
 .footer-gmail:active {
   color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
 }
 .footer-gmail:hover {
   color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
 }
 .footer-tel:active {
   color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
 }
 .footer-tel:hover {
   color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
+}
+.footer-address:active{
+    color: #2196f3;
+    transition: 0.7s;
+    border-radius: 4px;
+}
+.footer-address:hover {
+    color: #2196f3;
+    transition: 0.7s;
+    border-radius: 4px;
 }
