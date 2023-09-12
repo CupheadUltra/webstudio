@@ -1,3 +1,12 @@
+:root {
+  --background-color: #FFFFFF;
+  --cap-color: #2F303A;
+  --logo1-color: #2196F3;
+  --logo2-color: #000000;
+  --address-color: #757575;
+  --text-color: #212121;
+  --team-backgr-color: #F5F4FA;
+   }
 body {
   font-family: "Roboto";
 }

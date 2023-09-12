@@ -1,83 +1,92 @@
+:root {
+  --background-color: #ffffff;
+  --footer-backgr-color: #2f303a;
+  --logo1-color: #2196f3;
+  --logo2-color: #000000;
+  --address-color: #757575;
+  --text-color: #212121;
+  --line-color: #ececec;
+}
 body {
   font-family: "Roboto";
 }
 /* header */
 .logo1-header {
-    color: #2196f3;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
-  }
-  .logo2-header {
-    color: #000;
-    font-family: Raleway;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
-  }
-  .nav-list-item a {
-    color: #212121;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-  }
-  .header-gmail {
-    color: #757575;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-  }
-  .header-tel {
-    color: #757575;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-  }
-  .nav-list-item:nth-child(1) a {
-    color: #2196f3;
-  }
-  
-  .header-item:active {
-    color: #2196f3;
-    transition: 0.7s;
-    border-radius: 4px;
-  }
-  
-  .header-item:hover {
-    color: #2196f3;
-    transition: 0.7s;
-    border-radius: 4px;
-  }
-  .header-gmail:active {
-    color: #2196f3;
-    transition: 0.7s;
-    border-radius: 4px;
-  }
-  
-  .header-gmail:hover {
-    color: #2196f3;
-    transition: 0.7s;
-    border-radius: 4px;
-  }
-  
-  .header-tel:active {
-    color: #2196f3;
-    transition: 0.7s;
-    border-radius: 4px;
-  }
-  
-  .header-tel:hover {
-    color: #2196f3;
-    transition: 0.7s;
-    border-radius: 4px;
-  }
+  color: #2196f3;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.logo2-header {
+  color: #000;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.nav-list-item a {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.header-gmail {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.header-tel {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.nav-list-item:nth-child(2) a {
+  color: #2196f3;
+}
+
+.header-item:active {
+  color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
+}
+
+.header-item:hover {
+  color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
+}
+.header-gmail:active {
+  color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
+}
+
+.header-gmail:hover {
+  color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
+}
+
+.header-tel:active {
+  color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
+}
+
+.header-tel:hover {
+  color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
+}
 /* filters */
 .filters-button {
   border-radius: 4px;
@@ -173,13 +182,13 @@ body {
   transition: 0.7s;
   border-radius: 4px;
 }
-.footer-address:active{
-    color: #2196f3;
-    transition: 0.7s;
-    border-radius: 4px;
+.footer-address:active {
+  color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
 }
 .footer-address:hover {
-    color: #2196f3;
-    transition: 0.7s;
-    border-radius: 4px;
+  color: #2196f3;
+  transition: 0.7s;
+  border-radius: 4px;
 }
