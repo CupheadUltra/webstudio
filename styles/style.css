@@ -1,100 +1,100 @@
 :root {
-  --background-color: #FFFFFF;
-  --cap-color: #2F303A;
-  --logo1-color: #2196F3;
+  --background-color: #ffffff;
+  --cap-color: #2f303a;
+  --logo1-color: #2196f3;
   --logo2-color: #000000;
   --address-color: #757575;
   --text-color: #212121;
-  --team-backgr-color: #F5F4FA;
-   }
+  --team-backgr-color: #f5f4fa;
+}
 body {
   font-family: "Roboto";
 }
 /* header */
 .logo1-header {
-  color: #2196f3;
-  font-family: Raleway;
+  color: var(--logo1-color);
+  font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .logo2-header {
-  color: #000;
-  font-family: Raleway;
+  color: var(--logo2-color);
+  font-family: "Raleway";
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
-.nav-list-item a {
-  color: #212121;
+.header-item {
+  color: var(--address-color);
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
+
 .header-gmail {
-  color: #757575;
+  color: var(--address-color);
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .header-tel {
-  color: #757575;
+  color: var(--address-color);
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .nav-list-item:nth-child(1) a {
-  color: #2196f3;
+  color: var(--logo1-color);
 }
 
 .header-item:active {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 
 .header-item:hover {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 .header-gmail:active {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 
 .header-gmail:hover {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 
 .header-tel:active {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 
 .header-tel:hover {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 /* cap */
 
 .cap {
-  background-color: #2f303a;
+  background-color: var(--cap-color);
 }
 
 .cap-title {
-  color: #fff;
+  color: var(--background-color);
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -106,25 +106,23 @@ body {
   width: 216px;
   height: 50px;
   border-radius: 4px;
-  background: #2196f3;
+  background: var(--logo1-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 .cap-text {
-  margin-top: 10px;
-  color: #fff;
+  color: var(--background-color);
+  text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
-  letter-spacing: 1.87;
-  margin-bottom: 10px;
-  text-align: center;
+  letter-spacing: 0.96px;
 }
 
 /* why us */
 
 .why-us-hero {
-  color: #212121;
+  color: var(--logo2-color);
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
@@ -132,7 +130,7 @@ body {
   text-transform: uppercase;
 }
 .why-us-text {
-  color: #757575;
+  color: var(--address-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -142,7 +140,7 @@ body {
 /* what we do */
 
 .what-we-do-title {
-  color: #212121;
+  color: var(--text-color);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -153,7 +151,7 @@ body {
 /* team */
 
 .team-title {
-  color: #212121;
+  color: var(--text-color);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -161,7 +159,7 @@ body {
   letter-spacing: 1.08px;
 }
 .team-name {
-  color: #212121;
+  color: var(--text-color);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -169,7 +167,7 @@ body {
   letter-spacing: 0.48px;
 }
 .team-work {
-  color: #757575;
+  color: var(--address-color);
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -178,10 +176,10 @@ body {
 }
 /* footer */
 .footer {
-  background: #2f303a;
+  background: var(--cap-color);
 }
 .logo1-footer {
-  color: #2196f3;
+  color: var(--logo1-color);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -189,7 +187,7 @@ body {
   letter-spacing: 0.78px;
 }
 .logo2-footer {
-  color: #fff;
+  color: var(--background-color);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -197,7 +195,7 @@ body {
   letter-spacing: 0.78px;
 }
 .footer-address {
-  color: #fff;
+  color: var(--background-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -217,32 +215,32 @@ body {
   letter-spacing: 0.42px;
 }
 .footer-gmail:active {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 .footer-gmail:hover {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 .footer-tel:active {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 .footer-tel:hover {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
-.footer-address:active{
-    color: #2196f3;
-    transition: 0.7s;
-    border-radius: 4px;
+.footer-address:active {
+  color: var(--logo1-color);
+  transition: 0.7s;
+  border-radius: 4px;
 }
 .footer-address:hover {
-    color: #2196f3;
-    transition: 0.7s;
-    border-radius: 4px;
+  color: var(--logo1-color);
+  transition: 0.7s;
+  border-radius: 4px;
 }
