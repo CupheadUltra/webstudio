@@ -6,97 +6,98 @@
   --address-color: #757575;
   --text-color: #212121;
   --line-color: #ececec;
+  --port-border: #eeeeee;
 }
 body {
   font-family: "Roboto";
 }
 /* header */
 .logo1-header {
-  color: #2196f3;
-  font-family: Raleway;
+  color: var(--logo1-color);
+  font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .logo2-header {
-  color: #000;
-  font-family: Raleway;
+  color: var(--logo2-color);
+  font-family: "Raleway";
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
-.nav-list-item a {
-  color: #212121;
+.header-item {
+  color: var(--address-color);
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
+
 .header-gmail {
-  color: #757575;
+  color: var(--address-color);
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .header-tel {
-  color: #757575;
+  color: var(--address-color);
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
-.nav-list-item:nth-child(2) a {
-  color: #2196f3;
+.nav-list-item:nth-child(1) a {
+  color: var(--logo1-color);
 }
 
 .header-item:active {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 
 .header-item:hover {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 .header-gmail:active {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 
 .header-gmail:hover {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 
 .header-tel:active {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 
 .header-tel:hover {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 /* filters */
 .filters-button {
   border-radius: 4px;
-  background: #f5f4fa;
+  background: var(--background-color);
   border: none;
   color: #000;
 }
 .filters-button:hover {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--logo1-color);
+  color: var(--background-color);
   transition: 0.5s;
   border-radius: 4px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
@@ -105,18 +106,18 @@ body {
 
 /* portfolio */
 .port-item {
-  border: 1px solid #eee;
-  background: #fff;
+  border: 1px solid var(--port-border);
+  background: var(--background-color);
 }
 .port-name {
-  color: #212121;
+  color: var(--logo2-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
 }
 .port-work {
-  color: #757575;
+  color: var(--address-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
@@ -124,10 +125,10 @@ body {
 }
 /* footer */
 .footer {
-  background: #2f303a;
+  background: var(--footer-backgr-color);
 }
 .logo1-footer {
-  color: #2196f3;
+  color: var(--logo1-color);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -135,7 +136,7 @@ body {
   letter-spacing: 0.78px;
 }
 .logo2-footer {
-  color: #fff;
+  color: var(--background-color);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -143,7 +144,7 @@ body {
   letter-spacing: 0.78px;
 }
 .footer-address {
-  color: #fff;
+  color: var(--background-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -163,32 +164,32 @@ body {
   letter-spacing: 0.42px;
 }
 .footer-gmail:active {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 .footer-gmail:hover {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 .footer-tel:active {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 .footer-tel:hover {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 .footer-address:active {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
 .footer-address:hover {
-  color: #2196f3;
+  color: var(--logo1-color);
   transition: 0.7s;
   border-radius: 4px;
 }
