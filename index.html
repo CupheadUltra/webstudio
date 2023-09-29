@@ -8,16 +8,24 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/normolize.css" />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" type="images/x-icon" href="./favicon/favicon.ico" />
   </head>
   <body>
     <header class="header">
+      <div class="container">
         <nav class="header-nav">
-          <a class="logo1-header" target="_blank" href="./index.html">Web
-            <span class="logo2-header">Studio</span></a>
+          <a class="logo1-header" target="_blank" href="./index.html"
+            >Web<span class="logo2-header">Studio</span></a
+          >
           <ul class="nav-list-info">
             <li class="nav-list-item">
               <a href="./index.html" class="header-item">Студія</a>
@@ -40,14 +48,17 @@
             <a href="tel:+380961111111" class="header-tel">+38 096 111 11 11</a>
           </li>
         </ul>
+      </div>
     </header>
     <main class="main">
       <!-- cap -->
       <section class="cap">
-        <h1 class="cap-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="cap-button">
-          <h2 class="cap-text">Замовити послуг</h2>
-        </button>
+        <div class="container">
+          <h1 class="cap-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="cap-button">
+            <h2 class="cap-text">Замовити послуг</h2>
+          </button>
+        </div>
       </section>
       <!-- why us -->
       <section class="why-us">

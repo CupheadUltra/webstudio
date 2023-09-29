@@ -10,7 +10,16 @@
 body {
   font-family: "Roboto";
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: dashed red;
+}
 /* header */
+.header {
+  padding: 24px 0;
+}
 .logo1-header {
   color: var(--logo1-color);
   font-family: "Raleway";
@@ -91,6 +100,7 @@ body {
 
 .cap {
   background-color: var(--cap-color);
+  padding: 200px 0;
 }
 
 .cap-title {
