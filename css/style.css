@@ -64,37 +64,25 @@ body {
 
 .header-item:active {
   color: var(--logo1-color);
-  transition: 0.7s;
-  border-radius: 4px;
 }
 
 .header-item:hover {
   color: var(--logo1-color);
-  transition: 0.7s;
-  border-radius: 4px;
 }
 .header-gmail:active {
   color: var(--logo1-color);
-  transition: 0.7s;
-  border-radius: 4px;
 }
 
 .header-gmail:hover {
   color: var(--logo1-color);
-  transition: 0.7s;
-  border-radius: 4px;
 }
 
 .header-tel:active {
   color: var(--logo1-color);
-  transition: 0.7s;
-  border-radius: 4px;
 }
 
 .header-tel:hover {
   color: var(--logo1-color);
-  transition: 0.7s;
-  border-radius: 4px;
 }
 /* cap */
 
@@ -119,6 +107,7 @@ body {
   background: var(--logo1-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  padding: 10px 32px;
 }
 .cap-text {
   color: var(--background-color);
@@ -129,9 +118,11 @@ body {
   letter-spacing: 0.96px;
 }
 
-/* why us */
-
-.why-us-hero {
+/* features */
+.features {
+  padding: 94px 0 47px;
+}
+.features-hero {
   color: var(--logo2-color);
   font-size: 14px;
   font-weight: 700;
@@ -139,7 +130,7 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-.why-us-text {
+.features-text {
   color: var(--address-color);
   font-size: 14px;
   font-weight: 400;
@@ -149,7 +140,7 @@ body {
 
 /* what we do */
 
-.what-we-do-title {
+.work-title {
   color: var(--text-color);
   text-align: center;
   font-size: 36px;
@@ -159,7 +150,9 @@ body {
 }
 
 /* team */
-
+.team {
+  padding: 94px 0;
+}
 .team-title {
   color: var(--text-color);
   text-align: center;
@@ -187,6 +180,7 @@ body {
 /* footer */
 .footer {
   background: var(--cap-color);
+  padding: 60px 0;
 }
 .logo1-footer {
   color: var(--logo1-color);
@@ -226,31 +220,19 @@ body {
 }
 .footer-gmail:active {
   color: var(--logo1-color);
-  transition: 0.7s;
-  border-radius: 4px;
 }
 .footer-gmail:hover {
   color: var(--logo1-color);
-  transition: 0.7s;
-  border-radius: 4px;
 }
 .footer-tel:active {
   color: var(--logo1-color);
-  transition: 0.7s;
-  border-radius: 4px;
 }
 .footer-tel:hover {
   color: var(--logo1-color);
-  transition: 0.7s;
-  border-radius: 4px;
 }
 .footer-address:active {
   color: var(--logo1-color);
-  transition: 0.7s;
-  border-radius: 4px;
 }
 .footer-address:hover {
   color: var(--logo1-color);
-  transition: 0.7s;
-  border-radius: 4px;
 }
