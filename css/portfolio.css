@@ -7,6 +7,7 @@
   --text-color: #212121;
   --line-color: #ececec;
   --port-border: #eeeeee;
+  --backgr-br: #f5f4fa;
 }
 body {
   font-family: "Roboto";
@@ -20,6 +21,7 @@ body {
 /* header */
 .header {
   padding: 24px 0;
+  border-bottom: #ececec solid 1px;
 }
 .header-nav {
   display: flex;
@@ -98,22 +100,51 @@ body {
   color: var(--logo1-color);
 }
 /* filters */
+.filters {
+  padding: 94px 0;
+}
+.filters-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
 .filters-button {
+  color: var(--logo2-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.48px;
   border-radius: 4px;
-  background: var(--background-color);
+  background: var(--backgr-br);
   border: none;
-  color: #000;
+  padding: 6px 22px;
 }
 .filters-button:hover {
-  background-color: var(--logo1-color);
+  padding: 6px 25px;
   color: var(--background-color);
-  transition: 0.5s;
-  border-radius: 4px;
+  background: var(--logo1-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* portfolio */
 .portfolio {
-  padding: 94px 0;
+  margin-top: 50px;
+  height: 1272px;
+  margin-bottom: 94px;
+}
+.port-list {
+  background-color: var(--light-backgrond);
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.port-wrap {
+  padding: 0 24px 20px;
+  margin-top: 20px;
 }
 .port-item {
   border: 1px solid var(--port-border);
@@ -132,11 +163,17 @@ body {
   font-weight: 400;
   line-height: 1.87;
   letter-spacing: 0.48px;
+  margin-bottom: 4px;
 }
 /* footer */
 .footer {
   background: var(--footer-backgr-color);
   padding: 60px 0;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 .logo1-footer {
   color: var(--logo1-color);
@@ -145,6 +182,7 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+  margin-bottom: 20px;
 }
 .logo2-footer {
   color: var(--background-color);
@@ -160,6 +198,7 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  margin-top: 20px;
 }
 .footer-gmail {
   color: rgba(255, 255, 255, 0.6);
