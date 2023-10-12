@@ -119,6 +119,7 @@ body {
   background: var(--backgr-br);
   border: none;
   padding: 6px 22px;
+  cursor: pointer;
 }
 .filters-button:hover {
   padding: 6px 25px;
@@ -137,8 +138,8 @@ body {
 .port-list {
   background-color: var(--light-backgrond);
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: center;
+  align-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -163,7 +164,6 @@ body {
   font-weight: 400;
   line-height: 1.87;
   letter-spacing: 0.48px;
-  margin-bottom: 4px;
 }
 /* footer */
 .footer {
