@@ -13,8 +13,9 @@ body {
   font-family: "Roboto";
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
   padding: 0 15px;
   outline: dashed red;
 }
@@ -60,9 +61,9 @@ body {
   justify-content: end;
   gap: 50px;
   align-items: center;
+  margin-left: 344px;
 }
 .header-gmail {
-  margin-left: 344px;
   color: var(--address-color);
   font-size: 14px;
   font-weight: 500;
@@ -132,16 +133,14 @@ body {
 /* portfolio */
 .portfolio {
   margin-top: 50px;
-  height: 1272px;
   margin-bottom: 94px;
 }
 .port-list {
   background-color: var(--light-backgrond);
   display: flex;
-  justify-content: center;
-  align-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 .port-wrap {
   padding: 0 24px 20px;
@@ -150,6 +149,7 @@ body {
 .port-item {
   border: 1px solid var(--port-border);
   background: var(--background-color);
+  flex-basis: calc((100% - 90px) / 3);
 }
 .port-name {
   color: var(--logo2-color);
