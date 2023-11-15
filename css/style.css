@@ -101,8 +101,8 @@ body {
 .cap {
   background-color: var(--cap-color);
   padding: 200px 0;
-  background-image: url(../img/img-studio/title.jpg);
-}
+  background-image:linear-gradient(to top, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../img/img-studio/title.jpg);
+  }
 .cap-container {
   display: flex;
   flex-direction: column;
