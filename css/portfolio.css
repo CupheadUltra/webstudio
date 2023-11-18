@@ -17,7 +17,6 @@ body {
   margin: 0 auto;
   width: 100%;
   padding: 0 15px;
-  outline: dashed red;
 }
 /* header */
 .header {
@@ -123,7 +122,6 @@ body {
   cursor: pointer;
 }
 .filters-button:hover {
-  padding: 6px 25px;
   color: var(--background-color);
   background: var(--logo1-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),

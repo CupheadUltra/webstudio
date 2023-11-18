@@ -14,7 +14,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: dashed red;
 }
 /* header */
 .header {
@@ -189,6 +188,9 @@ background-image: url(../img/img-studio/features1.svg);
   letter-spacing: 0.42px;
 }
 /* what we do */
+.work {
+  padding-bottom: 94px;
+}
 .work-title {
   color: var(--text-color);
   text-align: center;
