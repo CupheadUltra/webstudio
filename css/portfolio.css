@@ -101,7 +101,7 @@ body {
 }
 /* filters */
 .filters {
-  padding: 94px 0;
+  padding-top: 94px;
 }
 .filters-list {
   display: flex;
