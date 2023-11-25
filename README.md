@@ -49,4 +49,4 @@
 ## Про автора
 
 Цей веб-сайт був створений Святославом Калугіном
-[Github](https://https://github.com/CupheadUltra)
+[GitHub](https://https://github.com/CupheadUltra)
