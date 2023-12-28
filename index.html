@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <title>WebStudio | Studio page</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -21,11 +21,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-nav">
-          <a class="logo1-header" target="_blank" href="./index.html"
-            >Web<span class="logo2-header">Studio</span></a
-          >
+          <a class="logo1-header" target="_blank" href="./index.html">Web<span class="logo2-header">Studio</span></a>
           <ul class="nav-list-info">
             <li class="nav-list-item">
               <a href="./index.html" class="header-item">Студія</a>
@@ -37,21 +35,28 @@
               <a href="#" class="header-item">Контакти</a>
             </li>
           </ul>
-          <ul class="nav-list-contact">
-            <li class="contact-item">
-              <a href="mailto:info@devstudio.com" class="header-gmail"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contact-item">
-              <a href="tel:+380961111111" class="header-tel"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+          <div class="nav-list-contact">
+            <div class="contact-item gmail">
+              <a href="mailto:info@devstudio.com" class="header-gmail">
+                <svg class="header-icon" width="16" height="12">
+                  <use href="./img/img-studio/icons.svg#mail"></use>
+                </svg>
+                <p class="header-text">info@devstudio.com</p>
+              </a>
+            </div>
+            <div class="contact-item">
+              <a href="tel:+380961111111" class="header-tel">
+                <svg class="header-icon" width="10" height="16">
+                  <use href="./img/img-studio/icons.svg#smartphone"></use>
+                </svg>
+                <p class="header-text">+38 096 111 11 11</p>
+              </a>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
+    
     <main class="main">
       <!-- cap -->
       <section class="cap">
@@ -140,6 +145,52 @@
               />
               <h3 class="team-name">Ігор Дем'яненко</h3>
               <p class="team-work">Product Designer</p>
+              <ul class="team-medias">
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/?lang=uk"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/?locale=uk_UA"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://ua.linkedin.com/"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-item">
               <img
@@ -151,6 +202,52 @@
               />
               <h3 class="team-name">Ольга Рєпіна</h3>
               <p class="team-work">Frontend Developer</p>
+              <ul class="team-medias">
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/?lang=uk"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/?locale=uk_UA"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://ua.linkedin.com/"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-item">
               <img
@@ -162,6 +259,52 @@
               />
               <h3 class="team-name">Микола Тарасов</h3>
               <p class="team-work">Marketing</p>
+              <ul class="team-medias">
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/?lang=uk"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/?locale=uk_UA"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://ua.linkedin.com/"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-item">
               <img
@@ -173,6 +316,102 @@
               />
               <h3 class="team-name">Михайло Єрмаков</h3>
               <p class="team-work">UI Designer</p>
+              <ul class="team-medias">
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/?lang=uk"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/?locale=uk_UA"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-media">
+                  <a
+                    target="_blank"
+                    href="https://ua.linkedin.com/"
+                    class="team-link"
+                  >
+                    <svg class="team-icon" width="20" height="20">
+                      <use href="./img/img-studio/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- clients -->
+      <section class="clients">
+        <div class="container">
+          <h2 class="clients-title">Постійні клієнти</h2>
+          <ul class="clients-list">
+            <li class="clients-item">
+              <a href="" class="clients-link">
+                <svg class="clients-icon" width="106" height="60">
+                  <use href="./img/img-studio/icons.svg#clients-logo1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="" class="clients-link">
+                <svg class="clients-icon" width="106" height="60">
+                  <use href="./img/img-studio/icons.svg#clients-logo2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="" class="clients-link">
+                <svg class="clients-icon" width="106" height="60">
+                  <use href="./img/img-studio/icons.svg#clients-logo3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="" class="clients-link">
+                <svg class="clients-icon" width="106" height="60">
+                  <use href="./img/img-studio/icons.svg#clients-logo4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="" class="clients-link">
+                <svg class="clients-icon" width="106" height="60">
+                  <use href="./img/img-studio/icons.svg#clients-logo5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="" class="clients-link">
+                <svg class="clients-icon" width="106" height="60">
+                  <use href="./img/img-studio/icons.svg#clients-logo6"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>

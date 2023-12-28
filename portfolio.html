@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <title>WebStudio | Portfolio page</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -21,11 +21,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-nav">
-          <a class="logo1-header" target="_blank" href="./index.html"
-            >Web<span class="logo2-header">Studio</span></a
-          >
+          <a class="logo1-header" target="_blank" href="./index.html">Web<span class="logo2-header">Studio</span></a>
           <ul class="nav-list-info">
             <li class="nav-list-item">
               <a href="./index.html" class="header-item">Студія</a>
@@ -37,18 +35,24 @@
               <a href="#" class="header-item">Контакти</a>
             </li>
           </ul>
-          <ul class="nav-list-contact">
-            <li class="contact-item">
-              <a href="mailto:info@devstudio.com" class="header-gmail"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contact-item">
-              <a href="tel:+380961111111" class="header-tel"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+          <div class="nav-list-contact">
+            <div class="contact-item gmail">
+              <a href="mailto:info@devstudio.com" class="header-gmail">
+                <svg class="header-icon" width="16" height="12">
+                  <use href="./img/img-studio/icons.svg#mail"></use>
+                </svg>
+                <p class="header-text">info@devstudio.com</p>
+              </a>
+            </div>
+            <div class="contact-item">
+              <a href="tel:+380961111111" class="header-tel">
+                <svg class="header-icon" width="10" height="16">
+                  <use href="./img/img-studio/icons.svg#smartphone"></use>
+                </svg>
+                <p class="header-text">+38 096 111 11 11</p>
+              </a>
+            </div>
+          </div>
         </nav>
       </div>
     </header>

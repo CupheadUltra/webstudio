@@ -21,7 +21,10 @@ body {
 /* header */
 .header {
   padding: 24px 0;
-  border-bottom: #ececec solid 1px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .header-nav {
   display: flex;
@@ -55,12 +58,14 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.gmail {
+  margin-left: 318px;
+}
 .nav-list-contact {
   display: flex;
-  justify-content: end;
   gap: 50px;
   align-items: center;
-  margin-left: 344px;
+  margin-left: auto;
 }
 .header-gmail {
   color: var(--address-color);
@@ -68,6 +73,9 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  
 }
 .header-tel {
   color: var(--address-color);
@@ -97,6 +105,44 @@ body {
 }
 
 .header-tel:hover {
+  color: var(--logo1-color);
+}
+.contact-item {
+  position: relative; 
+  text-decoration: none;
+  color: var(--address-color);
+  display: flex;
+  align-items: center; 
+  flex-shrink: 0; 
+}
+.contact-item:hover .header-icon {
+  fill: var(--logo1-color);
+}
+.header-text {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  margin: 0;
+  padding-left: 25px; 
+  color: inherit;
+  line-height: 1.5; 
+  white-space: nowrap; 
+}
+.header-icon {
+  fill: var(--address-color);
+  width: 16px;
+  height: 16px;
+  position: absolute; 
+  left: 0;
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+.header-gmail .header-text {
+  margin-left: 5px; 
+}
+
+.header-gmail:hover .header-text,
+.header-tel:hover .header-text {
   color: var(--logo1-color);
 }
 /* filters */
