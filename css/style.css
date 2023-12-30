@@ -11,6 +11,9 @@
 body {
   font-family: "Roboto";
 }
+html {
+  scroll-behavior: smooth;
+}
 *::selection {
   background-color: var(--logo1-color);
   color: var(--background-color);
@@ -35,23 +38,21 @@ body {
 }
 .logo1-header {
   color: var(--logo1-color);
-  font-family: "Raleway";
+  font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.78px;
 }
 .logo2-header {
   color: var(--logo2-color);
-  font-family: "Raleway";
+  font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-right: 93px;
+  letter-spacing: 0.78px;
 }
 .nav-list-info {
   display: flex;
+  margin-left: 93px;
   gap: 50px;
 }
 .header-item {
@@ -86,7 +87,17 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
+.header-item:focus {
+  outline: none;
+  color: var(--logo1-color);
+}
+.header-info:focus {
+  outline: none;
+  color: var(--logo1-color);
+}
+.header-info:focus-within .header-icon {
+  fill: var(--logo1-color);
+}
 .header-item:active {
   color: var(--logo1-color);
 }
@@ -335,7 +346,17 @@ body {
   justify-content: center;
   margin-top: 16px;
 }
-
+.team-media:focus-within {
+  background-color: var(--logo1-color);
+  outline: none;
+  border-radius: 50%;
+}
+.team-media:focus {
+  outline: none;
+}
+.team-media:focus-within .team-icon {
+  fill: var(--background-color);
+}
 .team-link {
   display: flex;
   align-items: center;
@@ -343,6 +364,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  outline: none;
 }
 
 .team-link:hover {
@@ -379,6 +401,16 @@ body {
   padding: 15px 31px;
   border-radius: 4px;
   border: 1px solid var(--clients-color);
+}
+.clients-link:focus {
+  border: 1px solid var(--logo1-color);
+}
+.clients-link:focus .clients-icon {
+  fill: var(--logo1-color);
+  outline: none;
+}
+.clients-link:focus {
+  outline: none;
 }
 .clients-link:hover {
   border: 1px solid var(--logo1-color);
@@ -441,6 +473,22 @@ body {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+.footer-info:focus {
+  color: var(--logo1-color);
+  outline: none;
+}
+.footer-media:focus-within {
+  background-color: var(--logo1-color);
+  outline: none;
+  border-radius: 50%;
+}
+.footer-media:focus {
+  outline: none;
+}
+.footer-media:focus-within .footer-icon {
+  fill: var(--background-color);
+}
+
 .footer-wrapper {
   padding-top: 12px;
 }
@@ -465,6 +513,7 @@ body {
   padding: 12px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
 }
 
 .footer-run:hover {

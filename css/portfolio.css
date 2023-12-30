@@ -12,10 +12,17 @@
 body {
   font-family: "Roboto";
 }
+html {
+  scroll-behavior: smooth;
+}
+*::selection {
+  background-color: var(--logo1-color);
+  color: var(--background-color);
+}
 .container {
   max-width: 1200px;
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
   padding: 0 15px;
 }
 /* header */
@@ -32,23 +39,21 @@ body {
 }
 .logo1-header {
   color: var(--logo1-color);
-  font-family: "Raleway";
+  font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.78px;
 }
 .logo2-header {
   color: var(--logo2-color);
-  font-family: "Raleway";
+  font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-right: 93px;
+  letter-spacing: 0.78px;
 }
 .nav-list-info {
   display: flex;
+  margin-left: 93px;
   gap: 50px;
 }
 .header-item {
@@ -75,7 +80,6 @@ body {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
-  
 }
 .header-tel {
   color: var(--address-color);
@@ -84,7 +88,17 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
+.header-item:focus {
+  outline: none;
+  color: var(--logo1-color);
+}
+.header-info:focus {
+  outline: none;
+  color: var(--logo1-color);
+}
+.header-info:focus-within .header-icon {
+  fill: var(--logo1-color);
+}
 .header-item:active {
   color: var(--logo1-color);
 }
@@ -108,12 +122,12 @@ body {
   color: var(--logo1-color);
 }
 .contact-item {
-  position: relative; 
+  position: relative;
   text-decoration: none;
   color: var(--address-color);
   display: flex;
-  align-items: center; 
-  flex-shrink: 0; 
+  align-items: center;
+  flex-shrink: 0;
 }
 .contact-item:hover .header-icon {
   fill: var(--logo1-color);
@@ -123,22 +137,22 @@ body {
   font-weight: 500;
   letter-spacing: 0.28px;
   margin: 0;
-  padding-left: 25px; 
+  padding-left: 25px;
   color: inherit;
-  line-height: 1.5; 
-  white-space: nowrap; 
+  line-height: 1.5;
+  white-space: nowrap;
 }
 .header-icon {
   fill: var(--address-color);
   width: 16px;
   height: 16px;
-  position: absolute; 
+  position: absolute;
   left: 0;
-  top: 50%; 
-  transform: translateY(-50%); 
+  top: 50%;
+  transform: translateY(-50%);
 }
 .header-gmail .header-text {
-  margin-left: 5px; 
+  margin-left: 5px;
 }
 
 .header-gmail:hover .header-text,
@@ -148,6 +162,7 @@ body {
 /* filters */
 .filters {
   padding-top: 94px;
+  border-top: solid rgba(236, 236, 236, 1) 1px;
 }
 .filters-list {
   display: flex;
@@ -167,6 +182,14 @@ body {
   padding: 6px 22px;
   cursor: pointer;
 }
+.filters-button:focus {
+  background: var(--logo1-color);
+  color: var(--background-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+}
 .filters-button:hover {
   color: var(--background-color);
   background: var(--logo1-color);
@@ -180,7 +203,7 @@ body {
   margin-bottom: 94px;
 }
 .port-list {
-  background-color: var(--light-backgrond);
+  background-color: var(--background-color);
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -197,7 +220,14 @@ body {
 }
 .port-item:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-  0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.port-link:focus {
+  outline: none;
+}
+.port-link:focus .port-art {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .port-name {
   color: var(--logo2-color);
@@ -265,6 +295,22 @@ body {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+.footer-info:focus {
+  color: var(--logo1-color);
+  outline: none;
+}
+.footer-media:focus-within {
+  background-color: var(--logo1-color);
+  outline: none;
+  border-radius: 50%;
+}
+.footer-media:focus {
+  outline: none;
+}
+.footer-media:focus-within .footer-icon {
+  fill: var(--background-color);
+}
+
 .footer-wrapper {
   padding-top: 12px;
 }
@@ -289,6 +335,7 @@ body {
   padding: 12px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
 }
 
 .footer-run:hover {
