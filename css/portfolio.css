@@ -218,6 +218,10 @@ body {
   background: var(--footer-backgr-color);
   padding: 60px 0;
 }
+.footer-container {
+  display: flex;
+  gap: 70px;
+}
 .footer-list {
   display: flex;
   flex-direction: column;
@@ -261,6 +265,40 @@ body {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+.footer-wrapper {
+  padding-top: 12px;
+}
+.footer-text {
+  color: var(--background-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.footer-medias {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-run {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-run:hover {
+  background-color: var(--logo1-color);
+}
+
+.footer-icon {
+  fill: var(--background-color);
+}
+
 .footer-gmail:active {
   color: var(--logo1-color);
 }

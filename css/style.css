@@ -78,7 +78,6 @@ body {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
-  
 }
 .header-tel {
   color: var(--address-color);
@@ -111,12 +110,12 @@ body {
   color: var(--logo1-color);
 }
 .contact-item {
-  position: relative; 
+  position: relative;
   text-decoration: none;
   color: var(--address-color);
   display: flex;
-  align-items: center; 
-  flex-shrink: 0; 
+  align-items: center;
+  flex-shrink: 0;
 }
 .contact-item:hover .header-icon {
   fill: var(--logo1-color);
@@ -126,22 +125,22 @@ body {
   font-weight: 500;
   letter-spacing: 0.28px;
   margin: 0;
-  padding-left: 25px; 
+  padding-left: 25px;
   color: inherit;
-  line-height: 1.5; 
-  white-space: nowrap; 
+  line-height: 1.5;
+  white-space: nowrap;
 }
 .header-icon {
   fill: var(--address-color);
   width: 16px;
   height: 16px;
-  position: absolute; 
+  position: absolute;
   left: 0;
-  top: 50%; 
-  transform: translateY(-50%); 
+  top: 50%;
+  transform: translateY(-50%);
 }
 .header-gmail .header-text {
-  margin-left: 5px; 
+  margin-left: 5px;
 }
 
 .header-gmail:hover .header-text,
@@ -261,8 +260,31 @@ body {
 .work-list {
   display: flex;
   justify-content: space-between;
+  position: relative; /* Додаємо позицію для дочірніх елементів */
 }
-
+.work-item {
+  position: relative; /* Додаємо позицію для позицій елементів */
+}
+.work-img {
+  max-width: 100%; /* Можливість встановлювати максимальну ширину */
+  display: block; /* Зображення як блочний елемент */
+}
+.work-self-position {
+  position: absolute;
+  bottom: 0; /* Позиціюємо текст внизу відносно батьківського блоку */
+  left: 0;
+  width: 100%; /* Розтягуємо текст на всю ширину блоку */
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
 /* team */
 .team {
   padding: 94px 0;
