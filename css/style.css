@@ -275,20 +275,20 @@ html {
 .work-list {
   display: flex;
   justify-content: space-between;
-  position: relative; /* Додаємо позицію для дочірніх елементів */
+  position: relative; 
 }
 .work-item {
-  position: relative; /* Додаємо позицію для позицій елементів */
+  position: relative; 
 }
 .work-img {
-  max-width: 100%; /* Можливість встановлювати максимальну ширину */
-  display: block; /* Зображення як блочний елемент */
+  max-width: 100%; 
+  display: block; 
 }
 .work-self-position {
   position: absolute;
-  bottom: 0; /* Позиціюємо текст внизу відносно батьківського блоку */
+  bottom: 0; 
   left: 0;
-  width: 100%; /* Розтягуємо текст на всю ширину блоку */
+  width: 100%; 
   padding-top: 27px;
   padding-bottom: 27px;
   font-weight: 700;
