@@ -222,6 +222,8 @@ html {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
+  width: 152px;
+  text-wrap: nowrap;
 }
 
 /* features */
