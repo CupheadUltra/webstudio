@@ -7,6 +7,8 @@
   --text-color: #212121;
   --team-backgr-color: #f5f4fa;
   --clients-color: #afb1b8;
+  --cap-hover: #046ec3;
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -113,35 +115,44 @@ html {
 .header-item:focus {
   outline: none;
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .header-info:focus {
   outline: none;
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .header-info:focus-within .header-icon {
   fill: var(--logo1-color);
+  transition: var(--animation);
 }
 .header-item:active {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 
 .header-item:hover {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .header-gmail:active {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 
 .header-gmail:hover {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 
 .header-tel:active {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 
 .header-tel:hover {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .contact-item {
   position: relative;
@@ -180,6 +191,7 @@ html {
 .header-gmail:hover .header-text,
 .header-tel:hover .header-text {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 /* cap */
 
@@ -214,7 +226,10 @@ html {
   border: none;
   border-radius: 4px;
 }
-
+.cap-button:hover , .cap-button:focus {
+  background-color: var(--cap-hover);
+  transition: var(--animation);
+}
 .cap-text {
   color: var(--background-color);
   text-align: center;
@@ -374,9 +389,11 @@ html {
 }
 .team-media:focus {
   outline: none;
+  transition: var(--animation);
 }
 .team-media:focus-within .team-icon {
   fill: var(--background-color);
+  transition: var(--animation);
 }
 .team-link {
   display: flex;
@@ -389,6 +406,7 @@ html {
 }
 
 .team-link:hover {
+  transition: var(--animation);
   background-color: var(--logo1-color);
 }
 
@@ -425,19 +443,24 @@ html {
 }
 .clients-link:focus {
   border: 1px solid var(--logo1-color);
+  transition: var(--animation);
 }
 .clients-link:focus .clients-icon {
   fill: var(--logo1-color);
   outline: none;
+  transition: var(--animation);
 }
 .clients-link:focus {
   outline: none;
+  transition: var(--animation);
 }
 .clients-link:hover {
   border: 1px solid var(--logo1-color);
+  transition: var(--animation);
 }
 .clients-item:hover .clients-icon {
   fill: var(--logo1-color);
+  transition: var(--animation);
 }
 .clients-icon {
   fill: var(--clients-color);
@@ -497,17 +520,21 @@ html {
 .footer-info:focus {
   color: var(--logo1-color);
   outline: none;
+  transition: var(--animation);
 }
 .footer-media:focus-within {
   background-color: var(--logo1-color);
   outline: none;
   border-radius: 50%;
+  transition: var(--animation);
 }
 .footer-media:focus {
   outline: none;
+  transition: var(--animation);
 }
 .footer-media:focus-within .footer-icon {
   fill: var(--background-color);
+  transition: var(--animation);
 }
 
 .footer-wrapper {
@@ -539,6 +566,7 @@ html {
 
 .footer-run:hover {
   background-color: var(--logo1-color);
+  transition: var(--animation);
 }
 
 .footer-icon {
@@ -547,21 +575,27 @@ html {
 
 .footer-gmail:active {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .footer-gmail:hover {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .footer-tel:active {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .footer-tel:hover {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .footer-address:active {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .footer-address:hover {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .footer-form {
   margin-left: auto;
@@ -606,6 +640,7 @@ html {
 .footer-input:hover,
 .footer-input:focus {
   border: 1px solid var(--logo1-color);
+  transition: var(--animation);
 }
 
 .footer-input::placeholder {
@@ -635,11 +670,13 @@ html {
 
 .footer-btn:hover,
 .footer-btn:focus {
-  background: #046ec3;
+  background: var(--cap-hover);
+  transition: var(--animation);
 }
 
 .footer-send {
   fill: var(--background-color);
+  transition: var(--animation);
 }
 
 /* modal window */
@@ -691,6 +728,7 @@ html {
 .modal-close:hover .modal-dagger,
 .modal-close:focus .modal-dagger {
   fill: var(--logo1-color);
+  transition: var(--animation);
 }
 
 .modal-title {
@@ -730,6 +768,7 @@ html {
 .modal-input:hover,
 .modal-input:focus {
   border: 1px solid var(--logo1-color);
+  transition: var(--animation);
 }
 
 .modal-icon {
@@ -742,6 +781,7 @@ html {
 .modal-input:hover + .modal-icon,
 .modal-input:focus + .modal-icon {
   fill: var(--logo1-color);
+  transition: var(--animation);
 }
 
 .modal-message {
@@ -763,6 +803,7 @@ html {
 .modal-message:hover,
 .modal-message:focus {
   border: 1px solid var(--logo1-color);
+  transition: var(--animation);
 }
 
 .modal-wrap {
@@ -854,5 +895,6 @@ html {
 
 .modal-btn:hover,
 .modal-btn:focus {
-  background: #046ec3;
+  background: var(--cap-hover);
+  transition: var(--animation);
 }

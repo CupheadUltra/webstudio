@@ -8,7 +8,8 @@
   --line-color: #ececec;
   --port-border: #eeeeee;
   --backgr-br: #f5f4fa;
-
+  --cap-hover: #046ec3;
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: 'Roboto';
@@ -29,6 +30,8 @@ html {
 /* header */
 .header {
   padding: 24px 0;
+
+  background-color: var(--background-color);
 }
 .header-container {
   display: flex;
@@ -108,35 +111,44 @@ html {
 .header-item:focus {
   outline: none;
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .header-info:focus {
   outline: none;
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .header-info:focus-within .header-icon {
   fill: var(--logo1-color);
+  transition: var(--animation);
 }
 .header-item:active {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 
 .header-item:hover {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .header-gmail:active {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 
 .header-gmail:hover {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 
 .header-tel:active {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 
 .header-tel:hover {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .contact-item {
   position: relative;
@@ -175,6 +187,7 @@ html {
 .header-gmail:hover .header-text,
 .header-tel:hover .header-text {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 /* filters */
 .filters {
@@ -206,8 +219,10 @@ html {
     0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   outline: none;
+  transition: var(--animation);
 }
 .filters-button:hover {
+  transition: var(--animation);
   color: var(--background-color);
   background: var(--logo1-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
@@ -238,13 +253,16 @@ html {
 .port-item:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    transition: var(--animation);
 }
 .port-link:focus {
   outline: none;
+  transition: var(--animation);
 }
 .port-link:focus .port-art {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    transition: var(--animation);
 }
 .port-name {
   color: var(--logo2-color);
@@ -344,17 +362,21 @@ html {
 .footer-info:focus {
   color: var(--logo1-color);
   outline: none;
+  transition: var(--animation);
 }
 .footer-media:focus-within {
   background-color: var(--logo1-color);
   outline: none;
   border-radius: 50%;
+  transition: var(--animation);
 }
 .footer-media:focus {
   outline: none;
+  transition: var(--animation);
 }
 .footer-media:focus-within .footer-icon {
   fill: var(--background-color);
+  transition: var(--animation);
 }
 
 .footer-wrapper {
@@ -386,6 +408,7 @@ html {
 
 .footer-run:hover {
   background-color: var(--logo1-color);
+  transition: var(--animation);
 }
 
 .footer-icon {
@@ -394,21 +417,27 @@ html {
 
 .footer-gmail:active {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .footer-gmail:hover {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .footer-tel:active {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .footer-tel:hover {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .footer-address:active {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .footer-address:hover {
   color: var(--logo1-color);
+  transition: var(--animation);
 }
 .footer-form {
   margin-left: auto;
@@ -453,6 +482,7 @@ html {
 .footer-input:hover,
 .footer-input:focus {
   border: 1px solid var(--logo1-color);
+  transition: var(--animation);
 }
 
 .footer-input::placeholder {
@@ -482,9 +512,11 @@ html {
 
 .footer-btn:hover,
 .footer-btn:focus {
-  background: #046ec3;
+  background: var(--cap-hover);
+  transition: var(--animation);
 }
 
 .footer-send {
   fill: var(--background-color);
+  transition: var(--animation);
 }
