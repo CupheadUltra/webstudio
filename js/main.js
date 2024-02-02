@@ -38,3 +38,460 @@ filter();
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}
+// Скрол до вверху
+// Скрол до вверху
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
+}

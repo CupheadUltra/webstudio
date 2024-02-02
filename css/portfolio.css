@@ -9,7 +9,6 @@
   --port-border: #eeeeee;
   --backgr-br: #f5f4fa;
   --cap-hover: #046ec3;
-  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: 'Roboto';
@@ -66,6 +65,10 @@ html {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-item {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checked {
   color: var(--logo1-color);
@@ -111,44 +114,35 @@ html {
 .header-item:focus {
   outline: none;
   color: var(--logo1-color);
-  transition: var(--animation);
 }
 .header-info:focus {
   outline: none;
   color: var(--logo1-color);
-  transition: var(--animation);
 }
 .header-info:focus-within .header-icon {
   fill: var(--logo1-color);
-  transition: var(--animation);
 }
 .header-item:active {
   color: var(--logo1-color);
-  transition: var(--animation);
 }
 
 .header-item:hover {
   color: var(--logo1-color);
-  transition: var(--animation);
 }
 .header-gmail:active {
   color: var(--logo1-color);
-  transition: var(--animation);
 }
 
 .header-gmail:hover {
   color: var(--logo1-color);
-  transition: var(--animation);
 }
 
 .header-tel:active {
   color: var(--logo1-color);
-  transition: var(--animation);
 }
 
 .header-tel:hover {
   color: var(--logo1-color);
-  transition: var(--animation);
 }
 .contact-item {
   position: relative;
@@ -179,15 +173,18 @@ html {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-gmail .header-text {
   margin-left: 5px;
+}
+.header-text {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-gmail:hover .header-text,
 .header-tel:hover .header-text {
   color: var(--logo1-color);
-  transition: var(--animation);
 }
 /* filters */
 .filters {
@@ -253,16 +250,19 @@ html {
 .port-item:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    transition: var(--animation);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .port-link:focus {
   outline: none;
-  transition: var(--animation);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .port-link:focus .port-art {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    transition: var(--animation);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .port-name {
   color: var(--logo2-color);
@@ -362,21 +362,21 @@ html {
 .footer-info:focus {
   color: var(--logo1-color);
   outline: none;
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-media:focus-within {
   background-color: var(--logo1-color);
   outline: none;
   border-radius: 50%;
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-media:focus {
   outline: none;
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-media:focus-within .footer-icon {
   fill: var(--background-color);
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-wrapper {
@@ -408,7 +408,7 @@ html {
 
 .footer-run:hover {
   background-color: var(--logo1-color);
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon {
@@ -417,27 +417,27 @@ html {
 
 .footer-gmail:active {
   color: var(--logo1-color);
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-gmail:hover {
   color: var(--logo1-color);
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-tel:active {
   color: var(--logo1-color);
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-tel:hover {
   color: var(--logo1-color);
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-address:active {
   color: var(--logo1-color);
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-address:hover {
   color: var(--logo1-color);
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form {
   margin-left: auto;
@@ -482,7 +482,7 @@ html {
 .footer-input:hover,
 .footer-input:focus {
   border: 1px solid var(--logo1-color);
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input::placeholder {
@@ -513,10 +513,10 @@ html {
 .footer-btn:hover,
 .footer-btn:focus {
   background: var(--cap-hover);
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-send {
   fill: var(--background-color);
-  transition: var(--animation);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
