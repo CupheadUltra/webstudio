@@ -18,13 +18,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="icon" type="images/x-icon" href="./favicon/favicon.ico" />
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
-          <a class="logo1-header" target="_blank" href="./index.html"
+          <a class="logo1-header animate__bounce animate__animated" target="_blank" href="./index.html"
             >Web<span class="logo2-header">Studio</span></a
           >
           <ul class="nav-list-info">
@@ -65,7 +66,7 @@
       <section class="cap">
         <div class="container cap-container">
           <h1 class="cap-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="cap-button" data-modal-open>
+          <button type="button" class="cap-button animate__animated animate__tada" data-modal-open>
             <h2 class="cap-text">Замовити послугу</h2>
           </button>
         </div>
@@ -436,10 +437,10 @@
       </div>
     </footer>
     <!-- modal window -->
-    <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden ">
       <div class="modal">
         <form class="modal-form" autocomplete="on">
-          <button data-modal-close type="button" class="close-circle">
+          <button data-modal-close type="button" class="close-circle " >
             <svg class="modal-close" width="18" height="18">
               <use href="./img/img-studio/icons.svg#close-black"></use>
             </svg>
