@@ -34,11 +34,11 @@ html {
 .header {
   padding: 24px 0;
   border-bottom: #ececec solid 1px;
-  /* width: 100%;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100; */
+  z-index: 100;
   background-color: var(--background-color);
 }
 .header-container {
@@ -198,9 +198,9 @@ html {
   color: var(--logo1-color);
 }
 /* main */
-/* .wrapper {
+.wrapper {
   padding: 24px 0;
-} */
+}
 /* cap */
 .cap {
   background-color: var(--cap-color);
@@ -239,7 +239,7 @@ html {
   animation: buttonExpand 0.3s forwards;
 }
 .cap-button:not(:hover) {
-  animation: none; /* отменяем анимацию при загрузке страницы */
+  animation: none; 
 }
 .cap-text {
   color: var(--background-color);
