@@ -11,7 +11,7 @@
   --cap-hover: #046ec3;
 }
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -19,6 +19,31 @@ html {
 *::selection {
   background-color: var(--logo1-color);
   color: var(--background-color);
+}
+*:focus {
+  outline: none;
+}
+
+a,
+button {
+  transition: transform 0.3s ease; 
+}
+
+
+a:hover,
+button:hover {
+  transform: scale(1.1); 
+}
+
+a:focus,
+button:focus {
+  transform: scale(1.1); 
+}
+
+
+a:not(:hover):not(:focus),
+button:not(:hover):not(:focus) {
+  transform: scale(1); 
 }
 .container {
   max-width: 1200px;
@@ -29,7 +54,12 @@ html {
 /* header */
 .header {
   padding: 24px 0;
-
+  border-bottom: #ececec solid 1px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
   background-color: var(--background-color);
 }
 .header-container {
@@ -185,6 +215,10 @@ html {
 .header-gmail:hover .header-text,
 .header-tel:hover .header-text {
   color: var(--logo1-color);
+}
+/* main */
+.wrapper {
+  padding: 24px 0;
 }
 /* filters */
 .filters {
