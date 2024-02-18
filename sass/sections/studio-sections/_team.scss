@@ -1,0 +1,90 @@
+
+
+/* team */
+.team {
+    padding: 94px 0;
+    background-color: var(--team-backgr-color);
+  }
+  .team-title {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+  }
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .team-item {
+    width: 270px;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--background-color);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  .team-name {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .team-work {
+    color: var(--address-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+  .team-medias {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .team-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .team-media:focus-within {
+    background-color: var(--logo1-color);
+    outline: none;
+    border-radius: 50%;
+  }
+  .team-media:focus {
+    outline: none;
+  }
+  .team-media:focus-within .team-icon {
+    fill: var(--background-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .team-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    outline: none;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .team-link:hover {
+    background-color: var(--logo1-color);
+  }
+  
+  .team-icon {
+    fill: var(--clients-color);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .team-link:hover .team-icon {
+    fill: var(--background-color);
+  }

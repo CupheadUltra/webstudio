@@ -1,0 +1,220 @@
+
+
+/* footer */
+.footer {
+    background: var(--cap-color);
+    padding: 60px 0;
+  }
+  .footer-container {
+    display: flex;
+    gap: 70px;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .logo1-footer {
+    color: var(--logo1-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    margin-bottom: 20px;
+  }
+  .logo2-footer {
+    color: var(--background-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+  }
+  .footer-address {
+    color: var(--background-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    margin-top: 20px;
+  }
+  .footer-gmail {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-tel {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-info:focus {
+    color: var(--logo1-color);
+    outline: none;
+    transition: var(--animation);
+  }
+  .footer-media:focus-within {
+    background-color: var(--logo1-color);
+    outline: none;
+    border-radius: 50%;
+    transition: var(--animation);
+  }
+  .footer-media:focus {
+    outline: none;
+    transition: var(--animation);
+  }
+  .footer-media:focus-within .footer-icon {
+    fill: var(--background-color);
+    transition: var(--animation);
+  }
+  
+  .footer-wrapper {
+    padding-top: 12px;
+  }
+  .footer-text {
+    color: var(--background-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+  
+  .footer-medias {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .footer-run {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+  }
+  
+  .footer-run:hover {
+    background-color: var(--logo1-color);
+    transition: var(--animation);
+  }
+  
+  .footer-icon {
+    fill: var(--background-color);
+  }
+  
+  .footer-gmail:active {
+    color: var(--logo1-color);
+    transition: var(--animation);
+  }
+  .footer-gmail:hover {
+    color: var(--logo1-color);
+    transition: var(--animation);
+  }
+  .footer-tel:active {
+    color: var(--logo1-color);
+    transition: var(--animation);
+  }
+  .footer-tel:hover {
+    color: var(--logo1-color);
+    transition: var(--animation);
+  }
+  .footer-address:active {
+    color: var(--logo1-color);
+    transition: var(--animation);
+  }
+  .footer-address:hover {
+    color: var(--logo1-color);
+    transition: var(--animation);
+  }
+  .footer-form {
+    margin-left: auto;
+    padding-top: 12px;
+  }
+  
+  .footer-title {
+    color: var(--background-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .footer-label {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .footer-name {
+    width: auto;
+    width: 358px;
+    height: 50px;
+  }
+  
+  .footer-input {
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    color: var(--background-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.48px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .footer-input:hover,
+  .footer-input:focus {
+    border: 1px solid var(--logo1-color);
+    transition: var(--animation);
+  }
+  
+  .footer-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.48px;
+  }
+  
+  .footer-btn {
+    display: flex;
+    align-items: center;
+    color: var(--background-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    background: var(--logo1-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    height: 53px;
+    gap: 10px;
+    border: none;
+    padding: 10px 28px;
+    margin-left: 16px;
+  }
+  
+  .footer-btn:hover,
+  .footer-btn:focus {
+    background: var(--cap-hover);
+    transition: var(--animation);
+  }
+  
+  .footer-send {
+    fill: var(--background-color);
+    transition: var(--animation);
+  }
+  

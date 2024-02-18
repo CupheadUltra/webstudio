@@ -1,0 +1,16 @@
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/common";
+@import "./base/container";
+
+@import "./components/header";
+@import "./components/wrapper";
+@import "./components/footer";
+@import "./components/scroll";
+
+@import "./sections/studio-sections/cap";
+@import "./sections/studio-sections/features";
+@import "./sections/studio-sections/work";
+@import "./sections/studio-sections/team";
+@import "./sections/studio-sections/clients";
+@import "./sections/studio-sections/modal";
