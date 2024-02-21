@@ -13,24 +13,3 @@ body {
     outline: none;
   }
   
-  a,
-  button {
-    transition: transform 0.3s ease; 
-  }
-  
-  
-  a:hover,
-  button:hover {
-    transform: scale(1.1); 
-  }
-  
-  a:focus,
-  button:focus {
-    transform: scale(1.1); 
-  }
-  
-  
-  a:not(:hover):not(:focus),
-  button:not(:hover):not(:focus) {
-    transform: scale(1); 
-  }
