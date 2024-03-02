@@ -1,9 +1,9 @@
 // Фільтр проектів в порфтоліо
-const list = document.querySelector('.port-list');
-const items = document.querySelectorAll('.port-item');
+const list = document.querySelector('.port__list');
+const items = document.querySelectorAll('.port__item');
 
 function filter() {
-  const filters = document.querySelectorAll('.filters-item');
+  const filters = document.querySelectorAll('.filters__item');
 
   filters.forEach(filter => {
     filter.addEventListener('click', event => {

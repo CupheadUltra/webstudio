@@ -1,41 +1,37 @@
-
 /* filters */
 .filters {
-    padding-top: 94px;
-    border-top: solid rgba(236, 236, 236, 1) 1px;
-  }
-  .filters-list {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-  }
-  .filters-button {
-    color: var(--logo2-color);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.63;
-    letter-spacing: 0.48px;
-    border-radius: 4px;
-    background: var(--backgr-br);
-    border: none;
-    padding: 6px 22px;
-    cursor: pointer;
-  }
-  .filters-button:focus {
-    background: var(--logo1-color);
-    color: var(--background-color);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-      0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    outline: none;
-    transition: var(--animation);
-  }
-  .filters-button:hover {
-    transition: var(--animation);
-    color: var(--background-color);
-    background: var(--logo1-color);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-      0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  }
-  
+	padding-top: 94px;
+	border-top: solid rgba(236, 236, 236, 1) 1px;
+}
+.filters__list {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+}
+.filters__button {
+	color: $logo2-color;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.63;
+	letter-spacing: 0.48px;
+	border-radius: 4px;
+	background: $backgr-br;
+	border: none;
+	padding: 6px 22px;
+	cursor: pointer;
+	&:focus {
+		background: $logo1-color;
+		color: $background-color;
+		box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+		cursor: pointer;
+		outline: none;
+		transition: $animation;
+	}
+	&:hover {
+		transition: $animation;
+		color: $background-color;
+		background: $logo1-color;
+		box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+	}
+}
