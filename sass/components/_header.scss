@@ -7,15 +7,13 @@
   left: 0;
   z-index: 100;
   background-color: $background-color;
-}
-
-.header__container,
-.header__nav {
+  &__container,
+&__nav {
   display: flex;
   align-items: center;
 }
 
-.logo1__header {
+&__logo1{
   color: $logo1-color;
   font-family: Raleway;
   font-size: 26px;
@@ -23,7 +21,7 @@
   letter-spacing: 0.78px;
 }
 
-.logo2__header {
+&__logo2 {
   color: $logo2-color;
   font-family: Raleway;
   font-size: 26px;
@@ -31,14 +29,16 @@
   letter-spacing: 0.78px;
 }
 
-.nav__list {
+&__list {
   display: flex;
   margin-left: 93px;
   gap: 50px;
 }
-
-.nav__item {
-  color: $logo2-color;
+&__blue {
+  color: $logo1-color;
+}
+&__item {
+  color: $logo1-color;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -46,11 +46,11 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact__item {
+&__contact--item {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checked {
+&__checked {
   color: $logo1-color;
   position: relative;
 
@@ -70,14 +70,14 @@
   margin-left: 318px;
 }
 
-.nav__list--contact {
+&__list--contact {
   display: flex;
   gap: 50px;
   align-items: center;
   margin-left: auto;
 }
 
-.contact__gmail {
+&__gmail {
   color: $address-color;
   font-size: 14px;
   font-weight: 500;
@@ -88,7 +88,7 @@
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact__tel {
+&__tel {
   color: $address-color;
   font-size: 14px;
   font-weight: 500;
@@ -97,56 +97,62 @@
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__item:focus {
+&__item:focus {
   outline: none;
   color: $logo1-color;
 }
 
-.contact__info {
+&__info {
   &:focus {
     outline: none;
     color: $logo1-color;
   }
 
-  &:focus-within .header__icon {
+  &:focus-within &__icon {
     fill: $logo1-color;
   }
 }
 
-.nav__item {
+&__item {
   &:active,
   &:hover {
     color: $logo1-color;
   }
 }
 
-.contact__gmail {
+&__gmail {
   &:active,
   &:hover {
     color: $logo1-color;
   }
 }
 
-.contact__tel {
+&__tel {
   &:active,
   &:hover {
     color: $logo1-color;
   }
 }
-
-.contact__item {
+&__blue {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: .02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__item {
   position: relative;
   text-decoration: none;
   color: $address-color;
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  &:hover .header__icon {
+  &:hover &__icon {
     fill: $logo1-color;
   }
 }
 
-.header__text {
+&__text {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
@@ -158,26 +164,32 @@
   white-space: nowrap;
 }
 
-.header__icon {
+&__icon {
   fill: $address-color;
   width: 16px;
   height: 16px;
   position: absolute;
-  left: 0;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.contact__gmail .header__text {
+&__gmail &__text {
   margin-left: 5px;
 }
 
-.header__text {
+&__text {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact__gmail:hover .header__text,
-.contact__tel:hover .header__text {
+&__gmail:hover &__text,
+&__tel:hover &__text {
   color: $logo1-color;
+
 }
+&__list--contact {
+  margin-left: 315px;
+}
+}
+

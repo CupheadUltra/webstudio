@@ -98,53 +98,48 @@ html {
   z-index: 100;
   background-color: #ffffff;
 }
-
-.header__container,
-.header__nav {
+.header__container, .header__nav {
   display: flex;
   align-items: center;
 }
-
-.logo1__header {
+.header__logo1 {
   color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
 }
-
-.logo2__header {
+.header__logo2 {
   color: #000000;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
 }
-
-.nav__list {
+.header__list {
   display: flex;
   margin-left: 93px;
   gap: 50px;
 }
-
-.nav__item {
-  color: #000000;
+.header__blue {
+  color: #2196f3;
+}
+.header__item {
+  color: #2196f3;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contact__item {
+.header__contact--item {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.checked {
+.header__checked {
   color: #2196f3;
   position: relative;
 }
-.checked::after {
+.header__checked::after {
   content: "";
   position: absolute;
   bottom: -30px;
@@ -154,19 +149,16 @@ html {
   background-color: #2196f3;
   border-radius: 2px;
 }
-
-.gmail {
+.header .gmail {
   margin-left: 318px;
 }
-
-.nav__list--contact {
+.header__list--contact {
   display: flex;
   gap: 50px;
   align-items: center;
   margin-left: auto;
 }
-
-.contact__gmail {
+.header__gmail {
   color: #757575;
   font-size: 14px;
   font-weight: 500;
@@ -176,8 +168,7 @@ html {
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contact__tel {
+.header__tel {
   color: #757575;
   font-size: 14px;
   font-weight: 500;
@@ -185,33 +176,34 @@ html {
   letter-spacing: 0.02em;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.nav__item:focus {
+.header__item:focus {
   outline: none;
   color: #2196f3;
 }
-
-.contact__info:focus {
+.header__info:focus {
   outline: none;
   color: #2196f3;
 }
-.contact__info:focus-within .header__icon {
+.header__info:focus-within .header__info__icon {
   fill: #2196f3;
 }
-
-.nav__item:active, .nav__item:hover {
+.header__item:active, .header__item:hover {
   color: #2196f3;
 }
-
-.contact__gmail:active, .contact__gmail:hover {
+.header__gmail:active, .header__gmail:hover {
   color: #2196f3;
 }
-
-.contact__tel:active, .contact__tel:hover {
+.header__tel:active, .header__tel:hover {
   color: #2196f3;
 }
-
-.contact__item {
+.header__blue {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__item {
   position: relative;
   text-decoration: none;
   color: #757575;
@@ -219,10 +211,9 @@ html {
   align-items: center;
   flex-shrink: 0;
 }
-.contact__item:hover .header__icon {
+.header__item:hover .header__item__icon {
   fill: #2196f3;
 }
-
 .header__text {
   font-size: 14px;
   font-weight: 500;
@@ -233,29 +224,26 @@ html {
   line-height: 1.5;
   white-space: nowrap;
 }
-
 .header__icon {
   fill: #757575;
   width: 16px;
   height: 16px;
   position: absolute;
-  left: 0;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contact__gmail .header__text {
+.header__gmail .header__text {
   margin-left: 5px;
 }
-
 .header__text {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contact__gmail:hover .header__text,
-.contact__tel:hover .header__text {
+.header__gmail:hover .header__text, .header__tel:hover .header__text {
   color: #2196f3;
+}
+.header__list--contact {
+  margin-left: 315px;
 }
 
 /* main */
@@ -268,19 +256,16 @@ html {
   background: #2f303a;
   padding: 60px 0;
 }
-
 .footer__container {
   display: flex;
   gap: 70px;
 }
-
 .footer__list {
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
-
-.logo1__footer {
+.footer__logo1 {
   color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
@@ -289,8 +274,7 @@ html {
   letter-spacing: 0.78px;
   margin-bottom: 20px;
 }
-
-.logo2__footer {
+.footer__logo2 {
   color: #ffffff;
   font-family: Raleway;
   font-size: 26px;
@@ -298,7 +282,6 @@ html {
   line-height: normal;
   letter-spacing: 0.78px;
 }
-
 .footer__address {
   color: #ffffff;
   font-size: 14px;
@@ -315,7 +298,6 @@ html {
   color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer__gmail {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
@@ -331,7 +313,6 @@ html {
   color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer__tel {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
@@ -348,20 +329,18 @@ html {
   color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer__info:focus {
   color: #2196f3;
   outline: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer__media:focus-within {
   background-color: #2196f3;
   outline: none;
   border-radius: 50%;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__media:focus-within .footer__icon {
+.footer__media:focus-within__icon {
   fill: #ffffff;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -369,11 +348,9 @@ html {
   outline: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer__wrapper {
   padding-top: 12px;
 }
-
 .footer__text {
   color: #ffffff;
   font-size: 14px;
@@ -381,13 +358,11 @@ html {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-
 .footer__medias {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
-
 .footer__run {
   display: flex;
   align-items: center;
@@ -401,16 +376,13 @@ html {
   background-color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer__icon {
   fill: #ffffff;
 }
-
 .footer__form {
   margin-left: auto;
   padding-top: 12px;
 }
-
 .footer__title {
   color: #ffffff;
   font-size: 14px;
@@ -419,18 +391,15 @@ html {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-
 .footer__label {
   display: flex;
   gap: 12px;
 }
-
 .footer__name {
   width: auto;
   width: 358px;
   height: 50px;
 }
-
 .footer__input {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -468,7 +437,6 @@ html {
   line-height: 1.25;
   letter-spacing: 0.48px;
 }
-
 .footer__btn {
   display: flex;
   align-items: center;
@@ -494,7 +462,6 @@ html {
   background: #046ec3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer__send {
   fill: #ffffff;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

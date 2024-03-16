@@ -1,58 +1,59 @@
 
 .features {
 	padding: 94px 0 47px;
-}
-.features__list {
-	display: flex;
-	justify-content: space-between;
-}
-.features__item {
-	max-width: 270px;
-	&::before {
-		content: '';
-		display: block;
-		height: 120px;
-		background-color: #f5f4fa;
-		background-size: 70px;
-		background-repeat: no-repeat;
-		background-position: center;
-		margin-bottom: 30px;
-		border-radius: 4px;
-		width: 270px;
+	&__list {
+		display: flex;
+		justify-content: space-between;
 	}
-	&:first-child {
-		&:before {
-			background-image: url(../img/img-studio/features1.svg);
+	&__item {
+		max-width: 270px;
+		&::before {
+			content: '';
+			display: block;
+			height: 120px;
+			background-color: #f5f4fa;
+			background-size: 70px;
+			background-repeat: no-repeat;
+			background-position: center;
+			margin-bottom: 30px;
+			border-radius: 4px;
+			width: 270px;
+		}
+		&:first-child {
+			&:before {
+				background-image: url(../img/img-studio/features1.svg);
+			}
+		}
+		&:nth-child(2) {
+			&:before {
+				background-image: url(../img/img-studio/features2.svg);
+			}
+		}
+		&:nth-child(3) {
+			&:before {
+				background-image: url(../img/img-studio/features3.svg);
+			}
+		}
+		&:nth-child(4) {
+			&:before {
+				background-image: url(../img/img-studio/features4.svg);
+			}
 		}
 	}
-	&:nth-child(2) {
-		&:before {
-			background-image: url(../img/img-studio/features2.svg);
-		}
+	&__hero {
+		color: $logo2-color;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 0.42px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
 	}
-	&:nth-child(3) {
-		&:before {
-			background-image: url(../img/img-studio/features3.svg);
-		}
+	&__text {
+		color: $address-color;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.71;
+		letter-spacing: 0.42px;
 	}
-	&:nth-child(4) {
-		&:before {
-			background-image: url(../img/img-studio/features4.svg);
-		}
-	}
-}
-.features__hero {
-	color: $logo2-color;
-	font-size: 14px;
-	font-weight: 700;
-	letter-spacing: 0.42px;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-}
-.features__text {
-	color: $address-color;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.71;
-	letter-spacing: 0.42px;
+	
 }

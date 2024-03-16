@@ -1,50 +1,51 @@
 
 .clients {
 	padding: 94px 0;
-}
-.clients__title {
-	color: $text-color;
-	text-align: center;
-	font-size: 36px;
-	font-weight: 700;
-	letter-spacing: 1.08px;
-}
-.clients__list {
-	display: flex;
-	gap: 30px;
-	justify-content: center;
-	margin-top: 50px;
-}
-.clients__link {
-	display: block;
-	padding: 15px 31px;
-	border-radius: 4px;
-	border: 1px solid $clients-color;
-	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	&:focus {
-		border: 1px solid $logo1-color;
+	&__title {
+		color: $text-color;
+		text-align: center;
+		font-size: 36px;
+		font-weight: 700;
+		letter-spacing: 1.08px;
 	}
-}
-.clients__link {
-	&:focus {
-		.clients-icon {
-			fill: $logo1-color;
+	&__list {
+		display: flex;
+		gap: 30px;
+		justify-content: center;
+		margin-top: 50px;
+	}
+	&__link {
+		display: block;
+		padding: 15px 31px;
+		border-radius: 4px;
+		border: 1px solid $clients-color;
+		transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		&:focus {
+			border: 1px solid $logo1-color;
+		}
+	}
+	&__link {
+		&:focus {
+			.clients-icon {
+				fill: $logo1-color;
+				outline: none;
+			}
 			outline: none;
 		}
-		outline: none;
-	}
-	&:hover {
-		border: 1px solid $logo1-color;
-	}
-}
-.clients__item {
-	&:hover {
-		.clients__icon {
-			fill: $logo1-color;
+		&:hover {
+			border: 1px solid $logo1-color;
 		}
 	}
-}
-.clients__icon {
-	fill: $clients-color;
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&__item {
+		&:hover {
+			&__icon {
+				fill: $logo1-color;
+			}
+		}
+	}
+	&__icon {
+		fill: $clients-color;
+		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
 }
