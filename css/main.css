@@ -98,26 +98,36 @@ html {
   z-index: 100;
   background-color: #ffffff;
 }
-.header__container, .header__nav {
+.header__container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 10px;
+}
+.header__nav {
   display: flex;
   align-items: center;
 }
 .header__logo1 {
   color: #2196f3;
-  font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
+  font-family: Raleway;
   letter-spacing: 0.78px;
 }
 .header__logo2 {
   color: #000000;
-  font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
+  font-family: Raleway;
   letter-spacing: 0.78px;
 }
 .header__list {
   display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
   margin-left: 93px;
   gap: 50px;
 }
@@ -152,7 +162,7 @@ html {
 .header .gmail {
   margin-left: 318px;
 }
-.header__list--contact {
+.header__listcontact {
   display: flex;
   gap: 50px;
   align-items: center;
@@ -242,7 +252,7 @@ html {
 .header__gmail:hover .header__text, .header__tel:hover .header__text {
   color: #2196f3;
 }
-.header__list--contact {
+.header__listcontact {
   margin-left: 315px;
 }
 

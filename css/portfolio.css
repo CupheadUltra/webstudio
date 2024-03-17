@@ -98,26 +98,32 @@ html {
   z-index: 100;
   background-color: #ffffff;
 }
-.header__container, .header__nav {
+.header__container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 10px;
+}
+.header__nav {
   display: flex;
   align-items: center;
 }
 .header__logo1 {
   color: #2196f3;
-  font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
+  font-family: Raleway;
   letter-spacing: 0.78px;
 }
 .header__logo2 {
   color: #000000;
-  font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
+  font-family: Raleway;
   letter-spacing: 0.78px;
 }
 .header__list {
-  display: flex;
   margin-left: 93px;
   gap: 50px;
 }
@@ -543,7 +549,7 @@ html {
 }
 
 /* portfolio */
-.portfolio {
+.port {
   margin-top: 50px;
   margin-bottom: 94px;
 }
