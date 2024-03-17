@@ -59,6 +59,22 @@ textarea {
   resize: none;
 }
 
+.modal__btn, .cap__button {
+  border-radius: 4px;
+  border: none;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__btn:hover::after, .cap__button:hover::after {
+  transform: translate(-50%, 0) scale(30);
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -163,10 +179,11 @@ html {
   margin-left: 318px;
 }
 .header__listcontact {
-  display: flex;
   gap: 50px;
-  align-items: center;
-  margin-left: auto;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
 }
 .header__gmail {
   color: #757575;
@@ -176,6 +193,10 @@ html {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__tel {
@@ -225,12 +246,12 @@ html {
   fill: #2196f3;
 }
 .header__text {
+  color: #757575;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
   margin: 0;
   padding-left: 25px;
-  color: #757575;
   line-height: 1.5;
   white-space: nowrap;
 }
@@ -268,6 +289,9 @@ html {
 }
 .footer__container {
   display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 70px;
 }
 .footer__list {
@@ -276,8 +300,8 @@ html {
   gap: 9px;
 }
 .footer__logo1 {
-  color: #2196f3;
   font-family: Raleway;
+  color: #2196f3;
   font-size: 26px;
   font-weight: 700;
   line-height: normal;
@@ -286,9 +310,9 @@ html {
 }
 .footer__logo2 {
   color: #ffffff;
-  font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
+  font-family: Raleway;
   line-height: normal;
   letter-spacing: 0.78px;
 }
@@ -310,9 +334,10 @@ html {
 }
 .footer__gmail {
   color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.71;
   letter-spacing: 0.42px;
+  line-height: 1.71;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__gmail:active {
@@ -523,10 +548,10 @@ html {
   align-items: center;
 }
 .cap__title {
-  color: #fff;
-  text-align: center;
+  color: #ffffff;
   font-size: 44px;
   font-weight: 900;
+  text-align: center;
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
@@ -547,21 +572,7 @@ html {
   }
 }
 .cap__button {
-  color: #fff;
-  text-align: center;
   padding: 10px 32px;
-  font-size: 16px;
-  font-weight: 700;
-  border: none;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
-  border-radius: 4px;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  animation-name: btn-move;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
 }
 @keyframes btn-move {
   0% {
@@ -676,7 +687,7 @@ html {
   max-width: 100%;
   display: block;
 }
-.work__self--position {
+.work__selfposition {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -781,9 +792,9 @@ html {
 }
 .clients__title {
   color: #212121;
-  text-align: center;
   font-size: 36px;
   font-weight: 700;
+  text-align: center;
   letter-spacing: 1.08px;
 }
 .clients__list {
@@ -849,6 +860,27 @@ html {
   display: none;
 }
 
+.close__circle {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.close__circle:hover {
+  fill: #2196f3;
+  cursor: pointer;
+}
+.close__circle:focus {
+  fill: #2196f3;
+}
+
 .modal {
   width: 528px;
   height: 581px;
@@ -866,7 +898,6 @@ html {
 .modal:not(.is-hidden) .modal {
   animation: zoomIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal__close {
   background-color: transparent;
   line-height: 0;
@@ -877,7 +908,6 @@ html {
   top: 8px;
   right: 8px;
 }
-
 .modal__title {
   color: #212121;
   text-align: center;
@@ -886,7 +916,6 @@ html {
   letter-spacing: 0.6px;
   margin-bottom: 12px;
 }
-
 .modal__name {
   display: block;
   position: relative;
@@ -895,7 +924,6 @@ html {
   font-weight: 400;
   letter-spacing: 0.12px;
 }
-
 .modal__input {
   display: block;
   height: 40px;
@@ -913,23 +941,21 @@ html {
 .modal__input:hover {
   border: 1px solid #2196f3;
 }
-.modal__input:hover + .modal__icon {
+.modal__input__icon {
   fill: #2196f3;
 }
 .modal__input:focus {
   border: 1px solid #2196f3;
 }
-.modal__input:focus + .modal__icon {
+.modal__icon {
   fill: #2196f3;
 }
-
 .modal__icon {
   position: absolute;
   left: 12px;
   top: 29px;
   fill: #212121;
 }
-
 .modal__message {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -951,27 +977,23 @@ html {
 .modal__message:focus {
   border: 1px solid #2196f3;
 }
-
 .modal__wrap {
   display: flex;
   padding-left: 13px;
   gap: 7px;
   align-items: center;
 }
-
 .modal__check {
   position: relative;
   border-radius: 2px;
   background-color: transparent;
 }
-
 .modal__checkbox {
   display: none;
 }
-.modal__checkbox:checked + .modal__fake::before {
+.modal__checkbox:checked__fake::before {
   opacity: 1;
 }
-
 .modal__fake {
   width: 16px;
   height: 15px;
@@ -994,7 +1016,6 @@ html {
   opacity: 0;
   border-radius: 2px;
 }
-
 .modal__checked {
   fill: #ffffff;
   position: absolute;
@@ -1004,7 +1025,6 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .modal__text {
   color: #757575;
   font-size: 14px;
@@ -1013,50 +1033,13 @@ html {
   letter-spacing: 0.42px;
   width: 400px;
 }
-
 .modal__link {
   color: #2196f3;
   text-decoration-line: underline;
-}
-
-.modal__btn {
-  border-radius: 4px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  border: none;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.96px;
-  padding: 10px 52px;
-  margin: 30px auto 0;
-  display: block;
 }
 .modal__btn:hover {
   background: #046ec3;
 }
 .modal__btn:focus {
   background: #046ec3;
-}
-
-.close__circle {
-  background-color: transparent;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-}
-.close__circle:hover {
-  fill: #2196f3;
-  cursor: pointer;
-}
-.close__circle:focus {
-  fill: #2196f3;
 }/*# sourceMappingURL=main.css.map */

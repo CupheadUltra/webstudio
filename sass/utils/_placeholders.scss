@@ -1,0 +1,16 @@
+%button-styles {
+  border-radius: 4px;
+  border: none;
+  background: $logo1-color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color $animation;
+
+  &:hover::after {
+    transform: translate(-50%, 0) scale(30);
+  }
+}

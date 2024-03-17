@@ -9,10 +9,9 @@
     align-items: center;
   }
   &__title {
-    color: #fff;
+    @include text($color: $background-color, $size: 44px, $weight: 900);
     text-align: center;
-    font-size: 44px;
-    font-weight: 900;
+ 
     line-height: 1.36;
     letter-spacing: 2.64px;
     text-transform: uppercase;
@@ -35,21 +34,8 @@
     }
   }
   &__button {
-    color: #fff;
-    text-align: center;
-    padding: 10px 32px;
-    font-size: 16px;
-    font-weight: 700;
-    border: none;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
-    border-radius: 4px;
-    background-color: #2196f3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-    animation-name: btn-move;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
+    @extend %button-styles;
+            padding: 10px 32px;
   }
   
   @keyframes btn-move {
