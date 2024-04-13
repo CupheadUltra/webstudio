@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio | Studio page</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -56,12 +57,17 @@
             </div>
           </div>
         </nav>
+        <button class="header__btn">
+          <svg class="header__burger" width="40" height="40">
+            <use href="./img/img-studio/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main class="main">
       <div class="wrapper"></div>
-      <!-- cap -->
+    
       <section class="cap">
         <div class="container cap__container">
           <h1 class="cap__title">Ефективні рішення для вашого бізнесу</h1>
@@ -70,11 +76,12 @@
           </button>
         </div>
       </section>
-      <!-- features -->
+      
       <section class="features">
         <div class="container">
           <ul class="features__list">
             <li class="features__item">
+              
               <h3 class="features__hero">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
@@ -101,8 +108,8 @@
           </ul>
         </div>
       </section>
-      <!-- work -->
-      <section class="work">
+    
+    <section class="work">
         <div class="container">
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
@@ -121,7 +128,7 @@
           </ul>
         </div>
       </section>
-      <!-- team -->
+      
       <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
@@ -309,7 +316,7 @@
           </ul>
         </div>
       </section>
-      <!-- clients -->
+      
       <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постійні клієнти</h2>
@@ -432,7 +439,7 @@
         </form>
       </div>
     </footer>
-    <!-- modal window -->
+
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <form class="modal__form" autocomplete="on">

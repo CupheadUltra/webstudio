@@ -82,10 +82,25 @@ html {
 }
 
 .container {
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  outline: red dashed;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
@@ -130,6 +145,8 @@ html {
   flex-wrap: wrap;
   margin-left: 93px;
   gap: 50px;
+  flex-wrap: nowrap;
+  display: none;
 }
 .header__blue {
   color: #2196f3;
@@ -161,13 +178,6 @@ html {
 }
 .header .gmail {
   margin-left: 318px;
-}
-.header__listcontact {
-  gap: 50px;
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  flex-wrap: wrap;
 }
 .header__gmail {
   color: #757575;
@@ -248,6 +258,9 @@ html {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header__icon:hover {
+  fill: #2196f3;
+}
 .header__gmail .header__text {
   margin-left: 5px;
 }
@@ -258,9 +271,87 @@ html {
   color: #2196f3;
 }
 .header__listcontact {
-  margin-left: 315px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: auto;
+  display: none;
+}
+.header__btn {
+  background-color: transparent;
+  margin-left: auto;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+.header__burger {
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__burger:hover, .header__burger:focus {
+  fill: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 21px 0;
+  }
+  .header__list {
+    display: flex;
+  }
+  .header__listcontact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 97px;
+  }
+  .header__icon {
+    width: 14px;
+    height: 10px;
+  }
+  .header__contact:nth-child(2) .header__icon {
+    width: 10px;
+    height: 14px;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__text {
+    color: #757575;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0;
+  }
+  .header__logo {
+    color: #2196f3;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .header__listcontact {
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 315px;
+  }
+  .header__icon {
+    width: 16px;
+    height: 12px;
+  }
+  .header__contact:nth-child(2) .header__icon {
+    width: 10px;
+    height: 16px;
+  }
+  .header__text {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
 /* main */
 .wrapper {
   padding: 24px 0;
