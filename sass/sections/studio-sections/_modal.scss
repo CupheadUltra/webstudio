@@ -1,0 +1,257 @@
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: opacity $transition;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  height: auto;
+  width: calc(100% - 30px);
+  background-color: $light-background;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  padding: 30px 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: visibility $transition,
+      transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%) rotate(360deg);
+
+  .is-hidden & {
+      transform: translate(0);
+  }
+
+  &__close {
+      background-color: transparent;
+      line-height: 0;
+      @include flex();
+      border-radius: 50%;
+      border: rgba(0, 0, 0, 0.1) 1px solid;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 30px;
+      height: 30px;
+  }
+
+  &__dagger {
+      fill: #000000;
+      transition: fill $transition;
+  }
+
+  &__close:hover &__dagger,
+  &__close:focus &__dagger {
+      fill: $accent;
+  }
+
+  &__title {
+      @include text($size: 16px, $weight: 700);
+      text-align: center;
+      letter-spacing: 0.6px;
+      margin-bottom: 12px;
+      line-height: normal;
+  }
+
+  &__name {
+      display: block;
+      position: relative;
+      @include text($color: $middle-text, $size: 12px);
+      letter-spacing: 0.12px;
+  }
+
+  &__input {
+      display: block;
+      width: 85%;
+    
+      padding: 12px 42px;
+      margin-top: 4px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      @include text();
+      letter-spacing: 0.12px;
+      transition: border $transition;
+
+      &:hover,
+      &:focus {
+          border: 1px solid $accent;
+      }
+  }
+
+  &__icon {
+      position: absolute;
+      left: 12px;
+      top: 29px;
+      fill: $dark-text;
+      transition: fill $transition;
+  }
+
+  &__input:hover+&__icon,
+  &__input:focus+&__icon {
+      fill: $accent;
+  }
+
+  &__message {
+      border-radius: 4px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      width: 95%;
+      height: 100px;
+      padding: 12px 16px;
+      display: block;
+      @include text($size: 12px);
+      letter-spacing: 0.12px;
+      margin-bottom: 20px;
+      margin-top: 4px;
+      resize: none;
+      transition: border $transition;
+
+      &:hover,
+      &:focus {
+          border: 1px solid $accent;
+      }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 13px;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__check {
+      position: relative;
+      border-radius: 2px;
+      background-color: transparent;
+  }
+
+  &__checkbox {
+      display: none;
+  }
+
+  &__fake {
+      width: 16px;
+      height: 15px;
+      display: block;
+      border-radius: 2px;
+      border: 2px solid #000;
+      position: relative;
+      cursor: pointer;
+
+      &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 19px;
+          height: 19px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: $accent;
+          opacity: 0;
+          border-radius: 2px;
+          transition: opacity $transition;
+      }
+
+  }
+
+  &__checkbox:checked+&__fake::before {
+      opacity: 1;
+  }
+
+  &__checked {
+      fill: $light-text;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  &__text {
+      @include text($size: 12px, $color: $middle-text);
+      line-height: normal;
+      letter-spacing: 0.42px;
+      width: calc(100% - 24px);
+  }
+
+  &__link {
+      color: $accent;
+      text-decoration-line: underline;
+  }
+
+  &__btn {
+      @extend %button-styles;
+      margin: 20px auto 0;
+      padding: 10px 52px;
+  }
+
+  &__desc {
+      @include text($color: $light-text, $weight: 700);
+      line-height: 1.88;
+      letter-spacing: 0.96px;
+      z-index: 4;
+      position: relative;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+      padding: 40px;
+      width: 450px;
+      height: auto;
+
+      &__title {
+          @include text($size: 20px, $weight: 700);
+      }
+
+      &__btn {
+          margin: 30px auto 0;
+      }
+
+      &__desc {
+          @include text($color: $light-text, $size: 16px, $weight: 700);
+      }
+
+      &__message {
+          height: 120px;
+      }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+      width: 528px;
+      height: 581px;
+
+      &__title {
+          line-height: normal;
+      }
+
+      &__message {
+          @include text();
+      }
+
+      &__text {
+          @include text($color: $middle-text);
+          line-height: 1.71;
+      }
+  }
+}

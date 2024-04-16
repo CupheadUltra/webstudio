@@ -1,15 +1,24 @@
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+*::selection {
+  background-color: $accent;
+  color: $light-text;
+}
+
+.block {
+  height: 60px;
+
+  @media screen and (min-width: 768px) {
+      height: 80px;
   }
-  html {
-    scroll-behavior: smooth;
+
+  @media screen and (min-width: 1200px) {
+      height: 78px;
   }
-  *::selection {
-    background-color: var(--logo1-color);
-    color: var(--background-color);
-  }
-  *:focus {
-    outline: none;
-  }
-  
+}

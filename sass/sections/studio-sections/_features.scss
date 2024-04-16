@@ -1,75 +1,62 @@
 .features {
   padding: 60px 0;
-  background-color: $background-color;
+  background-color: $light-text;
 
   &__list {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-wrap: wrap;
+    @include flex($justify: start, $align: start);
     gap: 30px;
   }
 
   &__item {
     max-width: 450px;
-    &::before {
-      content: '';
-      height: 120px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      background-color: #f5f4fa;
-      margin-bottom: 40px;
-      border-radius: 4px;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    &:first-child {
-      &:before {
-        background-image: url(../img/img-studio/features1.svg);
-      }
-    }
-    &:nth-child(2) {
-      &:before {
-        background-image: url(../img/img-studio/features2.svg);
-      }
-    }
-    &:nth-child(3) {
-      &:before {
-        background-image: url(../img/img-studio/features3.svg);
-      }
-    }
-    &:nth-child(4) {
-      &:before {
-        background-image: url(../img/img-studio/features4.svg);
-      }
-    }
   }
 
-  &__hero {
-    color: #212121;
-    font-size: 14px;
-    font-weight: 700;
+  &__wrapper {
+    height: 120px;
+    @include flex();
+    background-color: $team-background;
+    margin-bottom: 40px;
+    border-radius: 4px;
+  }
+
+  &__subtitle {
+    @include text($weight: 700);
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: center;
   }
-  &__text {
-    color: #757575;
-    font-size: 14px;
-    font-weight: 400;
+
+  &__desc {
+    @include text($color: $middle-text);
     line-height: 1.71;
     letter-spacing: 0.42px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .advans {
+  .features {
+
     &__item {
       width: 354px;
     }
 
     &__wrapper {
-      margin-botto
+      margin-bottom: 30px;
+    }
+
+    &__subtitle {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding: 94px 0 47px;
+
+    &__item {
+      width: 270px;
+    }
+  }
+}

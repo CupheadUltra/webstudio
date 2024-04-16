@@ -1,9 +1,9 @@
 // Фільтр проектів в порфтоліо
-const list = document.querySelector('.port__list');
-const items = document.querySelectorAll('.port__item');
+const list = document.querySelector('.portfolio__projects');
+const items = document.querySelectorAll('.portfolio__project');
 
 function filter() {
-  const filters = document.querySelectorAll('.filters__item');
+  const filters = document.querySelectorAll('.portfolio__button');
 
   filters.forEach(filter => {
     filter.addEventListener('click', event => {
@@ -38,4 +38,3 @@ filter();
     refs.modal.classList.toggle('is-hidden');
   }
 })();
-

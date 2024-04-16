@@ -1,0 +1,196 @@
+.header {
+  padding: 10px 0;
+  background-color: $light-background;
+  border-bottom: $light-grey solid 1px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+ 
+  &__container {
+      @include flex($justify: start);
+      z-index: 9;
+  }
+
+  &__logo {
+      @include text($color: $accent, $size: 24px, $weight: 700);
+      font-family: Raleway;
+      letter-spacing: 0.78px;
+  }
+
+  &__accent {
+      color: $dark-text;
+  }
+
+  &__list {
+      @include flex($justify: start, $align: start);
+      gap: 50px;
+      margin-left: 93px;
+      display: none;
+  }
+
+  &__item {
+      position: relative;
+  }
+
+  &__link {
+      @include text($weight: 500);
+      letter-spacing: 0.28px;
+      position: relative;
+      z-index: 5;
+      transition: color $transition;
+
+      &:hover,
+      &:focus {
+          color: $accent;
+      }
+  }
+
+  &__sublist {
+      position: absolute;
+      top: 48px;
+      z-index: 3;
+      transition: opacity 0.5s;
+      background-color: $light-background;
+      padding: 8px;
+      border: $light-grey solid 1px;
+      @include flex($justify: start, $align: start);
+      flex-direction: column;
+      gap: 4px;
+      opacity: 0;
+      border-radius: 4px;
+      box-shadow: 0px 9px 14.9px $light-grey;
+      transition: opacity $transition 0.5s;
+  }
+
+  &__item:hover &__sublist {
+      opacity: 1;
+  }
+
+  &__sublink {
+      @include text($color: $middle-text, $weight: 500);
+      letter-spacing: 0.28px;
+      transition: color $transition;
+
+      &:hover,
+      &:focus {
+          color: $accent;
+      }
+  }
+
+
+  &__contacts {
+      @include flex($justify: start, $align: start);
+      gap: 30px;
+      margin-left: auto;
+      display: none;
+  }
+
+  &__address {
+      @include flex($justify: start);
+      gap: 10px;
+      align-items: center;
+  }
+
+  &__icon {
+      fill: $middle-text;
+      transition: fill $transition;
+  }
+
+  &__address:hover &__icon,
+  &__address:focus &__icon {
+      fill: $accent;
+  }
+
+  &__text {
+      @include text($color: $middle-text, $weight: 500);
+      letter-spacing: 0.28px;
+      transition: color $transition;
+  }
+
+  &__address:hover &__text,
+  &__address:focus &__text {
+      color: $accent;
+  }
+
+  &__btn {
+      background-color: transparent;
+      margin-left: auto;
+      border: none;
+  }
+
+  &__burger {
+      fill: $dark-text;
+      transition: fill $transition;
+ 
+
+      &:hover,
+      &:focus {
+          fill: $accent;
+      }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+      padding: 21px 0;
+
+      &__list {
+          display: flex;
+      }
+
+      &__contacts {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+      }
+
+      &__icon {
+          width: 14px;
+          height: 10px;
+      }
+
+      &__contact:nth-child(2) &__icon {
+          width: 10px;
+          height: 14px;
+      }
+
+      &__btn {
+          display: none;
+      }
+
+      &__text {
+          @include text($size: 12px, $color: $middle-text, $weight: 500);
+      }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+      padding: 24px 0;
+
+      &__logo {
+          @include text($color: $accent, $size: 26px, $weight: 700);
+      }
+
+      &__contacts {
+          flex-direction: row;
+          gap: 30px;
+      }
+
+      &__icon {
+          width: 16px;
+          height: 12px;
+      }
+
+      &__contact:nth-child(2) &__icon {
+          width: 10px;
+          height: 16px;
+      }
+
+      &__text {
+          @include text($color: $middle-text, $weight: 500);
+      }
+  }
+}
