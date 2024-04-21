@@ -1,6 +1,7 @@
 .footer {
   padding: 60px 0;
   background: $dark-background;
+  background-size: 100%;
 
   &__container {
     @include flex($align: start);
@@ -103,13 +104,6 @@
     text-align: center;
   }
 
-  // &__label {
-  //     @include flex($justify: start);
-  //     flex-direction: column;
-  //     gap: 20px;
-  //     width: 100%;
-  // }
-
   &__name {
     display: block;
     width: 100%;
@@ -121,9 +115,8 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    width: 100%;
     height: 50px;
-    margin-right: 12px;
+    width: 95%;
     padding-left: 15px;
     @include text($color: $light-text, $size: 16px);
     line-height: 1.25;
@@ -152,10 +145,11 @@
     color: #fff;
     font-size: 16px;
     font-weight: 700;
-    margin-left: 130px;
+    margin-left: 70px;
     line-height: 1.88;
     letter-spacing: 0.96px;
     border-radius: 4px;
+  
     background: #2196f3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     gap: 12px;
@@ -173,6 +167,74 @@
     fill: $light-text;
   }
 }
+@media screen and (min-width: 480px) {
+  .footer {
+    &__form {
+      @include flex($justify: start);
+      flex-direction: column;
+      width: 450px;
+    }
+    &__btn {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      margin-left: 130px;
+      line-height: 1.88;
+      letter-spacing: 0.96px;
+      border-radius: 4px;
+      background: #2196f3;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+      gap: 12px;
+      border: none;
+      padding: 10px 28px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: $accent-hover;
+      }
+    }
+
+    &__send {
+      fill: $light-text;
+    }
+    &__input {
+      display: block;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background-color: transparent;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+      height: 50px;
+      width: 95%;
+      padding-left: 15px;
+      margin-right: 50px;
+      @include text($color: $light-text, $size: 16px);
+      line-height: 1.25;
+      letter-spacing: 0.48px;
+      transition: border $transition;
+      margin-bottom: 20px;
+  
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0.48px;
+      }
+  
+      &:hover,
+      &:focus {
+        border: 1px solid $accent;
+      }
+  }
+} 
+}
+  
+ 
+
 
 @media screen and (min-width: 768px) {
   .footer {
@@ -184,8 +246,8 @@
       gap: 165px;
     }
     &__wrap {
-        margin-top: 0px;
-      }
+      margin-top: 0px;
+    }
     &__btn {
       margin-left: 130px;
     }
