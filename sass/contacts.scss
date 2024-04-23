@@ -11,18 +11,14 @@
 @import "./components/footer";
 @import "./components/scroll";
 
-@import "./sections/studio-sections/cap";
-@import "./sections/studio-sections/features";
-@import "./sections/studio-sections/work";
-@import "./sections/studio-sections/team";
-@import "./sections/studio-sections/clients";
-@import "./sections/studio-sections/modal";
+@import "./sections/contacts-sections/contact.scss";
+@import "./sections/contacts-sections/map.scss";
 
-.header__item:nth-child(1) .header__link {
+.header__item:nth-child(3) .header__link {
     color: $accent;
 }
 
-.header__item:nth-child(1)::after {
+.header__item:nth-child(3)::after {
     content: "";
     display: block;
     position: absolute;
@@ -37,6 +33,6 @@
     animation-name: link-after-move;
 }
 
-.menu__item:nth-child(1) .menu__link {
+.menu__item:nth-child(3) .menu__link {
     color: $accent;
 }

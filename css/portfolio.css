@@ -42,6 +42,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: white;
 }
 
 *::-moz-selection {
@@ -300,11 +301,11 @@ body {
   justify-content: space-between;
 }
 .menu__btn {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   display: block;
   position: absolute;
   top: 10px;
-  padding-left: 500px;
+  right: 110px;
 }
 .menu__icon {
   fill: #212121;
@@ -364,7 +365,7 @@ body {
 
 /* main */
 .wrapper {
-  padding: 24px 0;
+  padding: 35px 0;
 }
 
 .footer {
@@ -872,4 +873,26 @@ body {
   .portfolio__projects {
     margin-top: 50px;
   }
+}
+.header__item:nth-child(2) .header__link {
+  color: #2196f3;
+}
+
+.header__item:nth-child(2)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #2196f3;
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  top: 45px;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: link-after-move;
+}
+
+.menu__item:nth-child(2) .menu__link {
+  color: #2196f3;
 }/*# sourceMappingURL=portfolio.css.map */

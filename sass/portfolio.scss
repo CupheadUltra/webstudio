@@ -11,5 +11,26 @@
 @import "./components/footer";
 @import "./components/scroll";
 
-
 @import "./sections/portfolio-sections/portfolio";
+.header__item:nth-child(2) .header__link {
+    color: $accent;
+}
+
+.header__item:nth-child(2)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $accent;
+    width: 100%;
+    border-radius: 2px;
+    height: 4px;
+    top: 45px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: link-after-move;
+}
+
+.menu__item:nth-child(2) .menu__link {
+    color: $accent;
+}
