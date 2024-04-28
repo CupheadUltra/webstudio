@@ -1,76 +1,90 @@
 .hero {
   padding: 118px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)), url(../img/img-studio/title.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../../../img/img-studio/mobile/cap/title@1x-mobile.webp');
+
+  @include retina {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../../../img/img-studio/mobile/cap/title@2x-mobile.webp');
+  }
   &__container {
-      @include flex($justify: start);
-      flex-direction: column;
+    @include flex($justify: start);
+    flex-direction: column;
   }
 
   &__title {
-      @include text($color: $light-text, $size: 26px, $weight: 900);
-      line-height: 1.36;
-      letter-spacing: 2.64px;
-      text-transform: uppercase;
-      margin-bottom: 30px;
-      margin-top: 0px;
-      max-width: 360px;
-      text-align: center;
+    @include text($color: $light-text, $size: 26px, $weight: 900);
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    max-width: 360px;
+    text-align: center;
   }
 
   &__btn {
-      @extend %button-styles;
-      padding: 10px 24px;
+    @extend %button-styles;
+    padding: 10px 24px;
   }
 
   &__text {
-      @include text($color: $light-text, $size: 16px, $weight: 700);
-      line-height: 1.88;
-      letter-spacing: 0.96px;
-      position: relative;
-      z-index: 4;
+    @include text($color: $light-text, $size: 16px, $weight: 700);
+    line-height: 1.88;
+    letter-spacing: 0.96px;
+    position: relative;
+    z-index: 4;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../../../img/img-studio/tablet/hero/title@1x-tablet.webp');
 
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-              rgba(47, 48, 58, 0.4)),url(../img/img-studio/title.jpg);
-
-      &__btn {
-          padding: 10px 24px;
-      }
+  @include retina {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../../../img/img-studio/tablet/hero/title@2x-tablet.webp');
+  }
+    &__btn {
+      padding: 10px 24px;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/img-studio/title.jpg);
-      padding: 200px 0;
+    padding: 200px 0;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../../../img/img-studio/dekstop/cap/title@1x-desktop.webp');
 
-      &__title {
-          @include text($color: $light-text, $size: 44px, $weight: 900);
-          max-width: 696px;
-      }
+  @include retina {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../../../img/img-studio/dekstop/cap/title@2x-desktop.webp');
+  }
 
-      &__btn {
-          @extend %button-styles;
-          padding: 10px 32px;
-      }
+    &__title {
+      @include text($color: $light-text, $size: 44px, $weight: 900);
+      max-width: 696px;
+    }
+
+    &__btn {
+      @extend %button-styles;
+      padding: 10px 32px;
+    }
   }
 }
 
 @keyframes btn-after-move {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
