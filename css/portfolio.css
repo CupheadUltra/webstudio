@@ -774,10 +774,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-.portfolio__img {
-  width: 100%;
-  display: none;
-}
 .portfolio__mobile {
   width: 100%;
 }
