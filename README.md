@@ -27,7 +27,8 @@
   соціальні мережі.
 
 <div align="center">
-![Webstudio](img/img-readme/readme-modal.jpg)
+<img src="img/img-readme/readme-modal.jpg" alt="Modal window">
+</div>
 
 ![Benefits and services](img/img-readme/readme-serv.jpg)
 
