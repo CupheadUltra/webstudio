@@ -37,6 +37,21 @@
 ![Team](img/img-readme/readme-team.jpg)
 
 ## Функціональність сайту
+- **Адаптивна верстка** - Веб-сайт повністю адаптивний та оптимізований для відображення на різних пристроях, включаючи комп'ютери, планшети та смартфони.
+
+
+
+<!-- ![Tablet Version](images/readme/studio-tablet.png) -->
+<div align="center">
+  <p>Tablet:</p>
+<img src="img/img-readme/readme-tablet.jpg" alt="Tablet Version" width="600">
+</div>
+
+<div align="center">
+  <p>Mobile: </p>
+<img src="img/img-readme/readme-mobile.jpg" alt="Mobile Version" width="300">
+</div>
+<!-- ![Tablet Version](images/readme/studio-tablet.png) -->
 
 - **Фільтрація** - на сторінці "Портфоліо" реалізована фільтрація за типами Веб-Сайти, Додатки,
   Дизайн та Маркетинг.

@@ -5,11 +5,11 @@
   background-repeat: no-repeat;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../../../img/img-studio/mobile/cap/title@1x-mobile.webp');
+    url('../img/img-studio/mobile/cap/title@1x-mobile.webp');
 
   @include retina {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../../../img/img-studio/mobile/cap/title@2x-mobile.webp');
+    url('../img/img-studio/mobile/cap/title@2x-mobile.webp');
   }
   &__container {
     @include flex($justify: start);
@@ -44,11 +44,11 @@
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../../../img/img-studio/tablet/hero/title@1x-tablet.webp');
+    url('../img/img-studio/tablet/hero/title@1x-tablet.webp');
 
   @include retina {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../../../img/img-studio/tablet/hero/title@2x-tablet.webp');
+    url('../img/img-studio/tablet/hero/title@2x-tablet.webp');
   }
     &__btn {
       padding: 10px 24px;
@@ -60,11 +60,11 @@
   .hero {
     padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../../../img/img-studio/dekstop/cap/title@1x-desktop.webp');
+    url('../img/img-studio/dekstop/cap/title@1x-desktop.webp');
 
   @include retina {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../../../img/img-studio/dekstop/cap/title@2x-desktop.webp');
+    url('../img/img-studio/dekstop/cap/title@2x-desktop.webp');
   }
 
     &__title {
